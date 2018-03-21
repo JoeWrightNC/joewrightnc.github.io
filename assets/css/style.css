@@ -28,6 +28,7 @@ body {
   font-size:small;
   text-align:right;
   z-index: 100;
+  outline: none;
 }
 
 #bunTopper {
@@ -75,17 +76,17 @@ body {
   border-color:black;
   position:absolute;
   top: 5%;
-  text-align:center;
 }
 
 .navBtns {
   background-color:white;
   border-color:white;
-  text-align:center;
-  font-weight:bold;
+  text-align:right;
+  font-weight:900;
   font-size:40px;
   margin-top:5px;
   margin-bottom:5px;
+  padding-right:10%;
   letter-spacing:10px;
 }
 
@@ -113,6 +114,7 @@ span:before, span:after {
 
 span:before {
   left: -2.5px;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 span:after {
   right: 2.5px;
@@ -123,13 +125,12 @@ span:after {
 span:hover:before {
   background: white;
   width: 60%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 span:hover:after {
   background: black;
   width: 60%;
-  right:22%;
-  height:7%;
+  margin-bottom:20px;
+  height:20px;
   transition: 0s;
 }

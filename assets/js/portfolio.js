@@ -34,6 +34,7 @@ $("#hamburgerBtn").on("mouseenter", (function(){
 $("#hamburgerBtn").on("click", function(){
   console.log("click received")
   $("#hamburgerBtn").unbind("mouseenter")
+  $("#hamburgerBtn").html("Destinations")
   $("#hamburgerBtn").animate({
     width: "100%",
     right: "48%",
