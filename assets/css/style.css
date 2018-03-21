@@ -2,6 +2,19 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
+#surpriseDiv {
+  width: 40%;
+  height: auto;
+  background-color:white;
+  font-size:50px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  line-height: 30px;
+  position: absolute;
+  top:13%;
+  left:27%;
+}
+
 #hamburgerBtn {
   height: 8px;
   width: 8%;
@@ -12,8 +25,9 @@ body {
   right: 15%;
   transform: rotate(90deg);
   color:white;
-  font-size:xx-small;
+  font-size:small;
   text-align:right;
+  z-index: 100;
 }
 
 #bunTopper {
@@ -52,4 +66,70 @@ body {
   position: relative;
   top:250px;
   left:-200px;
+}
+
+.navTron {
+  margin-left:10%;
+  width: 80%;
+  background-color:white;
+  border-color:black;
+  position:absolute;
+  top: 5%;
+  text-align:center;
+}
+
+.navBtns {
+  background-color:white;
+  border-color:white;
+  text-align:center;
+  font-weight:bold;
+  font-size:40px;
+  margin-top:5px;
+  margin-bottom:5px;
+  letter-spacing:10px;
+}
+
+.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: white;
+  width: 60%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: black;
+  width: 60%;
+  right:22%;
+  height:7%;
+  transition: 0s;
 }
