@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+#hamburgerBtn {
+  height: 8px;
+  width: 8%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  transform: rotate(90deg);
+  color:white;
+  font-size:xx-small;
+  text-align:right;
+}
+
+#bunTopper {
+  height: 8px;
+  width: 8%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 12%;
+  right: 13%;
+  transform: rotate(90deg);
+  color:white;
+  font-size:xx-small;
+  text-align:right;
+}
+
+#nameLines {
+  font-size:90px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  line-height: 55px;
+  transform: rotate(270deg);
+  position: absolute;
+  left:-5%;
+  bottom:25%;
+}
+
+#whatItDo {
+  font-size:90px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  line-height: 55px;
+  transform: rotate(90deg);
+  position: relative;
+  top:250px;
+  left:-200px;
+}
