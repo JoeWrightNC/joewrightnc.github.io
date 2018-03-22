@@ -2,6 +2,15 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
+a {
+  color:white;
+}
+
+a:hover {
+  color:darkgray;
+}
+
+/*load screen*/
 #surpriseDiv {
   width: 40%;
   height: auto;
@@ -15,6 +24,7 @@ body {
   left:27%;
 }
 
+/*nav stuff*/
 #hamburgerBtn {
   height: 8px;
   width: 8%;
@@ -96,13 +106,13 @@ body {
   padding: 0;
 }
 
-span {
+.navSpan {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-span:before, span:after {
+.navSpan:before, .navSpan:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -112,22 +122,23 @@ span:before, span:after {
   background: #fff;
 }
 
-span:before {
+.navSpan:before {
   left: -2.5px;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-span:after {
+
+.navSpan:after {
   right: 2.5px;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+.navSpan:hover:before {
   background: white;
   width: 60%;
 }
 
-span:hover:after {
+.navSpan:hover:after {
   background: black;
   width: 60%;
   margin-bottom:20px;
@@ -135,37 +146,35 @@ span:hover:after {
   transition: 0s;
 }
 
+/*games and apps*/
 #schoolProjects {
   position:absolute;
   top:50%;
+  width:100%;
 }
 
 #schoolProjText {
   font-size: 50px;
-  letter-spacing: 16px;
-  padding-bottom:120px;
+  letter-spacing: 35px;
+  padding-bottom:70px;
   font-weight: bold;
 }
 
-.gamesImg {
-  width:120px;
-  height:auto;
-}
-
-.overlay {
+.gamesOverlay {
   position: absolute;
-  top: -60%;
+  top: -200%;
   bottom: 0;
   left: -30%;
   right: 0;
   height: 300px;
-  width: 120px;
+  width: 150px;
   opacity: 0;
   transition: .5s ease;
   background-color: black;
 }
 
 .text {
+  font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -174,92 +183,116 @@ span:hover:after {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  padding:3px;
+  width:96%;
 }
 
-#vanGoghLink {
-  position: absolute;
-  top:42%;
-  left:7%;
-  transform: rotate(170deg);
-  width:120px;
-}
-
-#arrow1 {
-  position: absolute;
-  top:56%;
-  left:36%;
-  width:30px;
+.gamesImg {
+  width: 50px;
   height:auto;
-  transform: rotate(33deg);
 }
 
-#vanGoghLink:hover .overlay {
-  opacity: 1;
-  transform: rotate(-170deg);
-}
-
-#crystalLink {
-  position: absolute;
-  top:49%;
-  left:42%;
-  transform: rotate(210deg);
-  width:120px;
-}
-
-#arrow2 {
-  position: absolute;
-  top:79%;
-  left:71%;
-  width:30px;
+.gamesArrowImg {
+  width: 40px;
   height:auto;
-  transform: rotate(32deg);
 }
 
-#crystalLink:hover .overlay {
+#gameImgRow {
+  margin-left:5%;
+}
+
+#vanGoghLink:hover .gamesOverlay {
   opacity: 1;
-  transform: rotate(-210deg);
+  transform: rotate(360deg);
 }
 
-#rpgLink {
-  position: absolute;
-  top:96%;
-  left:73%;
-  transform: rotate(162deg);
-  width:120px;
-}
-
-#arrow3 {
-  position: absolute;
-  top:84%;
-  left:98%;
-  width:30px;
-  height:auto;
-  transform: rotate(-32deg);
-}
-
-#rpgLink:hover .overlay {
+#crystalLink:hover .gamesOverlay {
   opacity: 1;
-  transform: rotate(-162deg);
+  transform: rotate(-360deg);
 }
 
-#triviaLink {
-  position: absolute;
-  top:54%;
-  left:111%;
-  transform: rotate(194deg);
-  width:120px;
-}
-
-#arrow4 {
-  position: absolute;
-  top:59%;
-  left:191%;
-  width:30px;
-  height:auto;
-  transform: rotate(62deg);
-}
-
-#triviaLink:hover .overlay {
+#rpgLink:hover .gamesOverlay {
   opacity: 1;
-  transform: rotate(-194deg);
+  transform: rotate(360deg);
+}
+
+#triviaLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+/* About page */
+.aboutRow {
+  width:80%;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  transform:rotate(-22deg);
+}
+
+.aboutBanners {
+  background:black;
+  color:white;
+}
+
+.aboutBtwnBanners {
+  background:white;
+}
+
+.aboutTextBanners {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  text-align:center;
+  position:absolute;
+  top:25%;
+  right:10px;
+  font-size:30px;
+  font-weight:bold;
+  letter-spacing: 18px;
+}
+
+.aboutOverlay {
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  height: 40px;
+  width: 600%;
+  color:white;
+  z-index:100;
+  font-size:35px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+#linkedOverlay {
+  position: absolute;
+  top:108%;
+}
+
+#linkedCol:hover #linkedOverlay {
+  opacity: 1;
+  transform: rotate(382deg);
+}
+
+#emailOverlay {
+  position:absolute;
+  top:102%;
+  right: -65%;
+}
+
+#emailCol:hover #emailOverlay {
+  opacity: 1;
+  transform: rotate(382deg);
+}
+
+#gitOverlay {
+  position:absolute;
+  top:108%;
+  left: 400%;
+}
+
+#gitCol:hover #gitOverlay {
+  opacity: 1;
+  transform: rotate(382deg);
 }
