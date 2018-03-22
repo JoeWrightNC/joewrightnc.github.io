@@ -141,9 +141,10 @@ span:hover:after {
 }
 
 #schoolProjText {
-  font-size: 45px;
-  letter-spacing: 12px;
-  margin-bottom:160px;
+  font-size: 50px;
+  letter-spacing: 16px;
+  padding-bottom:120px;
+  font-weight: bold;
 }
 
 .gamesImg {
@@ -177,16 +178,16 @@ span:hover:after {
 
 #vanGoghLink {
   position: absolute;
-  top:27%;
-  left:11%;
+  top:42%;
+  left:7%;
   transform: rotate(170deg);
   width:120px;
 }
 
 #arrow1 {
   position: absolute;
-  top:48%;
-  left:51%;
+  top:56%;
+  left:36%;
   width:30px;
   height:auto;
   transform: rotate(33deg);
@@ -200,18 +201,18 @@ span:hover:after {
 #crystalLink {
   position: absolute;
   top:49%;
-  left:64%;
+  left:42%;
   transform: rotate(210deg);
   width:120px;
 }
 
 #arrow2 {
   position: absolute;
-  top:68%;
-  left:112%;
+  top:79%;
+  left:71%;
   width:30px;
   height:auto;
-  transform: rotate(-27deg);
+  transform: rotate(32deg);
 }
 
 #crystalLink:hover .overlay {
@@ -221,31 +222,31 @@ span:hover:after {
 
 #rpgLink {
   position: absolute;
-  top:24%;
-  left:122%;
-  transform: rotate(-62deg);
+  top:96%;
+  left:73%;
+  transform: rotate(162deg);
   width:120px;
 }
 
 #arrow3 {
   position: absolute;
-  top:63%;
-  left:163%;
+  top:84%;
+  left:98%;
   width:30px;
   height:auto;
-  transform: rotate(43deg);
+  transform: rotate(-32deg);
 }
 
 #rpgLink:hover .overlay {
   opacity: 1;
-  transform: rotate(62deg);
+  transform: rotate(-162deg);
 }
 
 #triviaLink {
   position: absolute;
-  top:69%;
-  left:177%;
-  transform: rotate(180deg);
+  top:54%;
+  left:111%;
+  transform: rotate(194deg);
   width:120px;
 }
 
@@ -260,5 +261,5 @@ span:hover:after {
 
 #triviaLink:hover .overlay {
   opacity: 1;
-  transform: rotate(-180deg);
+  transform: rotate(-194deg);
 }
