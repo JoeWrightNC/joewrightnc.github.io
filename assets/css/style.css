@@ -134,3 +134,131 @@ span:hover:after {
   height:20px;
   transition: 0s;
 }
+
+#schoolProjects {
+  position:absolute;
+  top:50%;
+}
+
+#schoolProjText {
+  font-size: 45px;
+  letter-spacing: 12px;
+  margin-bottom:160px;
+}
+
+.gamesImg {
+  width:120px;
+  height:auto;
+}
+
+.overlay {
+  position: absolute;
+  top: -60%;
+  bottom: 0;
+  left: -30%;
+  right: 0;
+  height: 300px;
+  width: 120px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#vanGoghLink {
+  position: absolute;
+  top:27%;
+  left:11%;
+  transform: rotate(170deg);
+  width:120px;
+}
+
+#arrow1 {
+  position: absolute;
+  top:48%;
+  left:51%;
+  width:30px;
+  height:auto;
+  transform: rotate(33deg);
+}
+
+#vanGoghLink:hover .overlay {
+  opacity: 1;
+  transform: rotate(-170deg);
+}
+
+#crystalLink {
+  position: absolute;
+  top:49%;
+  left:64%;
+  transform: rotate(210deg);
+  width:120px;
+}
+
+#arrow2 {
+  position: absolute;
+  top:68%;
+  left:112%;
+  width:30px;
+  height:auto;
+  transform: rotate(-27deg);
+}
+
+#crystalLink:hover .overlay {
+  opacity: 1;
+  transform: rotate(-210deg);
+}
+
+#rpgLink {
+  position: absolute;
+  top:24%;
+  left:122%;
+  transform: rotate(-62deg);
+  width:120px;
+}
+
+#arrow3 {
+  position: absolute;
+  top:63%;
+  left:163%;
+  width:30px;
+  height:auto;
+  transform: rotate(43deg);
+}
+
+#rpgLink:hover .overlay {
+  opacity: 1;
+  transform: rotate(62deg);
+}
+
+#triviaLink {
+  position: absolute;
+  top:69%;
+  left:177%;
+  transform: rotate(180deg);
+  width:120px;
+}
+
+#arrow4 {
+  position: absolute;
+  top:59%;
+  left:191%;
+  width:30px;
+  height:auto;
+  transform: rotate(62deg);
+}
+
+#triviaLink:hover .overlay {
+  opacity: 1;
+  transform: rotate(-180deg);
+}
