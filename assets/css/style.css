@@ -329,3 +329,58 @@ a:hover {
   width:100%;
   height:100%
 }
+
+.cultureBlock {
+  width: 60%;
+  height:auto;
+  position:absolute;
+  top:10%;
+  left:10%;
+  color:black;
+  background-color: white;
+  border: black;
+  border-width: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.cultureHeading {
+  font-family: 'Roboto', sans-serif !important;
+  font-size:25px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  margin-bottom:15px;
+}
+
+.nextArrow {
+  width:60px;
+  height:auto;
+  position:absolute;
+  top:90%;
+  left:90%;
+}
+
+#petPad {
+  width:120px;
+  height:auto;
+  position:absolute;
+  top:20%;
+  left:118%;
+}
+
+#hiddenPets {
+  width:80%;
+  z-index:100;
+}
+
+.hiddenPetsImg {
+  width:100%;
+  height:auto;
+}
+
+.hiddenPetsClass {
+  position:absolute;
+  top:0;
+  width:100%;
+  height:auto;
+}

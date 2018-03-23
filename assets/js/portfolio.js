@@ -187,7 +187,9 @@ $("#cultureCol").on("click", function() {
   $("#cultureFitDiv").show()
   $("#arrows").show()
   $("#catsAndDogs").hide()
-  setTimeout(function(){$("#arts").show()},1800);
+  $("#hiddenPets").hide()
+  setTimeout(function(){$("#catsAndDogs").show()},1800);
+  $("#books").hide()
   $("#music").hide()
   $("#campingOutdoors").hide()
   $("#coding").hide()
@@ -200,4 +202,21 @@ $("#cultureCol").on("click", function() {
   $("#arrows").fadeOut(250);
 })
 
+$("#petPad").on("click", function() {
+  console.log("petpadclicked")
+  $("#cultureBlock").css("opacity", ".8")
+  $("#hiddenPets").show()
+  var i=0
+  do {
+    $("#rainer").hide();
+    $("#lucy").show();
+    $("#lucy").fadeOut(5000);
+    setTimeout(function() {$("#lucy").hide();
+    $("#rainer").show();
+    $("#rainer").fadeOut(5000);
+  },4000);
+    i++
+  } while (i<2)
 
+/*   $("#cultureBlock").css("opacity", "1")
+ */})
