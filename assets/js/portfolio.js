@@ -1,5 +1,6 @@
 
 var partCounter = 2;
+var seconds = 0
 
 $("#landingDiv").show()
 $("#navScreenDiv").hide()
@@ -9,6 +10,8 @@ $("#gamesDiv").hide()
 $("#designDiv").hide()
 $("#artDiv").hide()
 $("#aboutDiv").hide()
+$("#cultureFitDiv").hide()
+
 
 function surpriseDivTime() {
   var i=0
@@ -48,6 +51,7 @@ $("#gamesDiv").hide()
 $("#designDiv").hide()
 $("#artDiv").hide()
 $("#aboutDiv").hide()
+$("#cultureFitDiv").hide()
   navScreen()
 })
 
@@ -65,6 +69,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").hide()
     $("#aboutDiv").hide()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -83,6 +88,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").hide()
     $("#aboutDiv").hide()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -101,6 +107,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").hide()
     $("#aboutDiv").hide()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -119,6 +126,7 @@ function navScreen() {
     $("#designDiv").show()
     $("#artDiv").hide()
     $("#aboutDiv").hide()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -137,6 +145,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").show()
     $("#aboutDiv").hide()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -155,6 +164,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").hide()
     $("#aboutDiv").show()
+    $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
       right: "9.5%",
@@ -169,3 +179,25 @@ $("#aboutCol").on("click", function() {
   $("#partCounter").html(partCounter)
   surpriseDivTime();
 })
+
+//culture page
+
+$("#cultureCol").on("click", function() {
+  $("#aboutDiv").hide()
+  $("#cultureFitDiv").show()
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  setTimeout(function(){$("#arts").show()},1800);
+  $("#music").hide()
+  $("#campingOutdoors").hide()
+  $("#coding").hide()
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+})
+
+
