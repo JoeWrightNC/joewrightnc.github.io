@@ -1,6 +1,18 @@
 
 var partCounter = 2;
 var seconds = 0
+var favBands = [
+  "Godspeed, You! Black Emperor",
+  "Mogwai",
+  "Explosions in the Sky",
+  "The Wood Brothers",
+  "John Stickley Trio",
+  "Elephant Revival",
+  "The Black Angels",
+  "Jamie XX",
+  "J. Cole",
+  "Zack Mexico",
+]
 
 $("#landingDiv").show()
 $("#navScreenDiv").hide()
@@ -204,7 +216,6 @@ $("#cultureCol").on("click", function() {
 
 $("#petPad").on("click", function() {
   console.log("petpadclicked")
-  $("#cultureBlock").css("opacity", ".8")
   $("#hiddenPets").show()
   var i=0
   do {
@@ -217,6 +228,57 @@ $("#petPad").on("click", function() {
   },4000);
     i++
   } while (i<2)
+})
 
-/*   $("#cultureBlock").css("opacity", "1")
- */})
+$("#petsArrow").on("click", function() {
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  $("#hiddenPets").hide()
+  $("#music").hide()
+  setTimeout(function(){$("#music").show()},1800);
+  $("#books").hide()
+  $("#campingOutdoors").hide()
+  $("#coding").hide()
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+})
+
+$("#guitar").on("click", function() {
+  var bandHolder = favBands[Math.floor(Math.random() * favBands.length)];
+  $("#favoriteBands").html(bandHolder)
+  setTimeout(function() {$("#favoriteBands").empty()},2000)
+})
+
+$("#musicArrow").on("click", function() {
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  $("#hiddenPets").hide()
+  $("#music").hide()
+  $("#books").hide()
+  $("#secretPoemDiv").hide()
+  setTimeout(function(){$("#books").show()},1800);
+  $("#campingOutdoors").hide()
+  $("#coding").hide()
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(250);
+})
+
+$("#openBook").on("click", function(){
+  $("#booksBlock").hide()
+  $("#secretPoemDiv").show()
+})
+
+$("#closeBook").on("click", function(){
+  $("#booksBlock").show()
+  $("#secretPoemDiv").hide()
+})

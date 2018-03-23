@@ -338,8 +338,6 @@ a:hover {
   left:10%;
   color:black;
   background-color: white;
-  border: black;
-  border-width: 5px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
@@ -360,7 +358,7 @@ a:hover {
   left:90%;
 }
 
-#petPad {
+.cultureBodyIcons {
   width:120px;
   height:auto;
   position:absolute;
@@ -383,4 +381,32 @@ a:hover {
   top:0;
   width:100%;
   height:auto;
+}
+
+#favoriteBands {
+  font-size:35px;
+  font-weight:bold;
+  letter-spacing: 5px;
+  position:absolute;
+  top:40px;
+  left:10%;
+  z-index:200;
+}
+
+#secretPoemDiv {
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing: 8px;
+  line-height: 5px;
+  position:absolute;
+  top:70px;
+  left:10%;
+}
+
+#closeBook {
+  width:120px;
+  height:auto;
+  position:absolute;
+  top:42%;
+  left:105%;
 }
