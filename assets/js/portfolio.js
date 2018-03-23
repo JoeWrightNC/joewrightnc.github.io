@@ -200,17 +200,17 @@ $("#cultureCol").on("click", function() {
   $("#arrows").show()
   $("#catsAndDogs").hide()
   $("#hiddenPets").hide()
-  setTimeout(function(){$("#catsAndDogs").show()},1800);
+  setTimeout(function(){$("#catsAndDogs").show()},2300);
   $("#books").hide()
   $("#music").hide()
   $("#campingOutdoors").hide()
   $("#coding").hide()
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+  $("#arrows").fadeIn(600);
   $("#arrows").fadeOut(250);
 })
 
@@ -235,16 +235,16 @@ $("#petsArrow").on("click", function() {
   $("#catsAndDogs").hide()
   $("#hiddenPets").hide()
   $("#music").hide()
-  setTimeout(function(){$("#music").show()},1800);
+  setTimeout(function(){$("#music").show()},2300);
   $("#books").hide()
   $("#campingOutdoors").hide()
   $("#coding").hide()
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+  $("#arrows").fadeIn(600);
   $("#arrows").fadeOut(250);
 })
 
@@ -261,15 +261,15 @@ $("#musicArrow").on("click", function() {
   $("#music").hide()
   $("#books").hide()
   $("#secretPoemDiv").hide()
-  setTimeout(function(){$("#books").show()},1800);
+  setTimeout(function(){$("#books").show()},2300);
   $("#campingOutdoors").hide()
   $("#coding").hide()
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
-  $("#arrows").fadeOut(250);
-  $("#arrows").fadeIn(250);
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+  $("#arrows").fadeIn(600);
   $("#arrows").fadeOut(250);
 })
 
@@ -281,4 +281,22 @@ $("#openBook").on("click", function(){
 $("#closeBook").on("click", function(){
   $("#booksBlock").show()
   $("#secretPoemDiv").hide()
+})
+
+$("#booksArrow").on("click", function() {
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  $("#hiddenPets").hide()
+  $("#music").hide()
+  $("#books").hide()
+  $("#campingOutdoors").hide()
+  setTimeout(function(){$("#campingOutdoors").show()},2300);
+  $("#coding").hide()
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+  $("#arrows").fadeIn(600);
+  $("#arrows").fadeOut(250);
 })

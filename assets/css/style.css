@@ -362,7 +362,7 @@ a:hover {
   width:120px;
   height:auto;
   position:absolute;
-  top:20%;
+  top:28%;
   left:118%;
 }
 
@@ -401,6 +401,12 @@ a:hover {
   position:absolute;
   top:70px;
   left:10%;
+}
+
+.rilke {
+  font-size:30px !important;
+  letter-spacing:2px;
+  line-height:15px;
 }
 
 #closeBook {
