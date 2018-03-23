@@ -1,4 +1,6 @@
 
+var partCounter = 2;
+
 $("#landingDiv").show()
 $("#navScreenDiv").hide()
 $("#resumeDiv").hide()
@@ -12,11 +14,11 @@ function surpriseDivTime() {
   var i=0
   $("#surpriseDiv").show()
   do {
-    $("#surpriseDiv").fadeOut(250);
-    $("#surpriseDiv").fadeIn(250);
+    $("#surpriseDiv").fadeOut(300);
+    $("#surpriseDiv").fadeIn(300);
     i++
   }
-  while (i<13)
+  while (i<8)
   $("#surpriseDiv").fadeOut(250);
 }
 
@@ -161,3 +163,9 @@ function navScreen() {
     }, 1800)
   })
 }
+
+$("#aboutCol").on("click", function() {
+  partCounter++
+  $("#partCounter").html(partCounter)
+  surpriseDivTime();
+})

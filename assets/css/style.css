@@ -22,6 +22,7 @@ a:hover {
   position: absolute;
   top:13%;
   left:27%;
+  z-index:101;
 }
 
 /*nav stuff*/
@@ -241,23 +242,28 @@ a:hover {
 }
 
 .aboutTextBanners {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-  text-align:center;
+/*   writing-mode: vertical-rl;
+ */  text-orientation: sideways;
+  word-wrap: break-word;
+  text-align:justify;
   position:absolute;
   top:25%;
-  right:10px;
-  font-size:30px;
+  font-size:16px;
   font-weight:bold;
-  letter-spacing: 18px;
 }
 
+.aboutIcons {
+  width:70%;
+  height:auto;
+  position:absolute;
+  top:35%;
+}
 .aboutOverlay {
   opacity: 0;
   transition: .5s ease;
   background-color: black;
   height: 40px;
-  width: 600%;
+  width: 700%;
   color:white;
   z-index:100;
   font-size:35px;
@@ -293,6 +299,28 @@ a:hover {
 }
 
 #gitCol:hover #gitOverlay {
+  opacity: 1;
+  transform: rotate(382deg);
+}
+
+#cultureOverlay {
+  position:absolute;
+  top:102%;
+  left: 150%;
+}
+
+#cultureCol:hover #cultureOverlay {
+  opacity: 1;
+  transform: rotate(382deg);
+}
+
+#pageOverlay {
+  position:absolute;
+  top:92%;
+  right:-200px;
+}
+
+#aboutCol:hover #pageOverlay {
   opacity: 1;
   transform: rotate(382deg);
 }
