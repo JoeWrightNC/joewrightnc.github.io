@@ -39,8 +39,13 @@ function surpriseDivTime() {
 
 surpriseDivTime()
 
+setTimeout(function() {
+  $("hamburgerBtn").effect("shake")
+},6000)
+
 $("#hamburgerBtn").on("mouseenter", (function(){
   $("#hamburgerBtn").html("Click to Explore")
+  $("#hamburgerBtn").unbind("effect")
   $("#hamburgerBtn").animate({
     right: "10%",
     top: "9.5%",
@@ -49,8 +54,6 @@ $("#hamburgerBtn").on("mouseenter", (function(){
 }))
 
 $("#hamburgerBtn").on("click", function(){
-  console.log("click received")
-
   $("#hamburgerBtn").unbind("mouseenter")
   $("#hamburgerBtn").html("Destinations")
   $("#hamburgerBtn").animate({
