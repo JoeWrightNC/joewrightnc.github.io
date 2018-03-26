@@ -39,10 +39,6 @@ function surpriseDivTime() {
 
 surpriseDivTime()
 
-setTimeout(function() {
-  $("hamburgerBtn").effect("shake")
-},6000)
-
 $("#hamburgerBtn").on("mouseenter", (function(){
   $("#hamburgerBtn").html("Click to Explore")
   $("#hamburgerBtn").unbind("effect")
@@ -203,7 +199,7 @@ $("#cultureCol").on("click", function() {
   $("#arrows").show()
   $("#catsAndDogs").hide()
   $("#hiddenPets").hide()
-  setTimeout(function(){$("#catsAndDogs").show()},2300);
+  setTimeout(function(){$("#catsAndDogs").show()},1400);
   $("#books").hide()
   $("#music").hide()
   $("#campingOutdoors").hide()
@@ -213,8 +209,7 @@ $("#cultureCol").on("click", function() {
   $("#arrows").fadeOut(350);
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
-  $("#arrows").fadeIn(600);
-  $("#arrows").fadeOut(250);
+
 })
 
 $("#petPad").on("click", function() {
@@ -239,6 +234,7 @@ $("#petsArrow").on("click", function() {
   $("#hiddenPets").hide()
   $("#music").hide()
   setTimeout(function(){$("#music").show()},2300);
+  $("#recordPlayerDiv").hide();
   $("#books").hide()
   $("#campingOutdoors").hide()
   $("#coding").hide()
@@ -252,9 +248,58 @@ $("#petsArrow").on("click", function() {
 })
 
 $("#guitar").on("click", function() {
-  var bandHolder = favBands[Math.floor(Math.random() * favBands.length)];
-  $("#favoriteBands").html(bandHolder)
-  setTimeout(function() {$("#favoriteBands").empty()},2000)
+  $("#musicFirst").hide();
+  $("#recordPlayerDiv").show();
+})
+
+$("#recordBtnOne").on("click", function() {
+  $("#recordPlayer").attr("src", "assets/images/recordPlayer.gif")
+  var stopOne = document.getElementById("gameMusicSource2");;
+  var stopTwo = document.getElementById("gameMusicSource3");;
+  stopOne.pause();
+  stopTwo.pause();
+  var player = document.getElementById("gameMusicSource1");;
+  player.loop = false;
+  player.play();
+  $("#recordPauseBtn").on("click", function() {
+    player.pause();
+    $("#recordPlayer").attr("src", "assets/images/recordPlayerStill.png")
+  })
+})
+
+$("#recordBtnTwo").on("click", function() {
+  $("#recordPlayer").attr("src", "assets/images/recordPlayer.gif")
+  var stopOne = document.getElementById("gameMusicSource1");;
+  var stopTwo = document.getElementById("gameMusicSource3");;
+  stopOne.pause();
+  stopTwo.pause();
+  var player = document.getElementById("gameMusicSource2");;
+  player.loop = false;
+  player.play();
+  $("#recordPauseBtn").on("click", function() {
+    player.pause();
+    $("#recordPlayer").attr("src", "assets/images/recordPlayerStill.png")
+  })
+})
+
+$("#recordBtnThree").on("click", function() {
+  $("#recordPlayer").attr("src", "assets/images/recordPlayer.gif")
+  var stopOne = document.getElementById("gameMusicSource1");;
+  var stopTwo = document.getElementById("gameMusicSource2");;
+  stopOne.pause();
+  stopTwo.pause();
+  var player = document.getElementById("gameMusicSource3");;
+  player.loop = false;
+  player.play();
+  $("#recordPauseBtn").on("click", function() {
+    player.pause();
+    $("#recordPlayer").attr("src", "assets/images/recordPlayerStill.png")
+  })
+})
+
+$("#recordBtnFour").on("click", function() {
+  $("#musicFirst").show();
+  $("#recordPlayerDiv").hide();
 })
 
 $("#musicArrow").on("click", function() {
