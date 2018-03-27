@@ -48,7 +48,7 @@ $("#hamburgerBtn").on("click", function(){
   $("#hamburgerBtn").animate({
     width: "100%",
     right: "48%",
-  }, 1800)
+  }, 800)
   $("#resumeDiv").hide()
 $("#websitesDiv").hide()
 $("#gamesDiv").hide()
@@ -79,7 +79,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
   })
   $("#websitesBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -98,7 +98,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
   })
   $("#gamesBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -117,7 +117,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
     })
   $("#designBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -136,7 +136,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
   })
   $("#artBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -155,7 +155,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
   })
   $("#aboutBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -174,7 +174,7 @@ function navScreen() {
       right: "9.5%",
       position: "absolute",
       fontSize:"small",
-    }, 1800)
+    }, 800)
   })
 }
 
