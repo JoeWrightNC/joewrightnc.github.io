@@ -2,18 +2,6 @@ $(document).ready(function () {
 
 var partCounter = 2;
 var seconds = 0
-var favBands = [
-  "Godspeed, You! Black Emperor",
-  "Mogwai",
-  "Explosions in the Sky",
-  "The Wood Brothers",
-  "John Stickley Trio",
-  "Elephant Revival",
-  "The Black Angels",
-  "Jamie XX",
-  "J. Cole",
-  "Zack Mexico",
-]
 
 $("#landingDiv").show()
 $("#navScreenDiv").hide()
@@ -34,11 +22,15 @@ function surpriseDivTime() {
     $("#surpriseDiv").fadeIn(300);
     i++
   }
-  while (i<8)
+  while (i<7)
   $("#surpriseDiv").fadeOut(250);
 }
 
 surpriseDivTime()
+
+setTimeout(function() {
+  $("#hamburgerBtn").css("transition", "width 1.1s cubic-bezier(0.22, 0.61, 0.36, 1)")
+},5000)
 
 $("#hamburgerBtn").on("mouseenter", (function(){
   $("#hamburgerBtn").html("Click to Explore")
@@ -234,7 +226,7 @@ $("#petsArrow").on("click", function() {
   $("#catsAndDogs").hide()
   $("#hiddenPets").hide()
   $("#music").hide()
-  setTimeout(function(){$("#music").show()},2300);
+  setTimeout(function(){$("#music").show()},1400);
   $("#recordPlayerDiv").hide();
   $("#books").hide()
   $("#campingOutdoors").hide()
@@ -244,8 +236,6 @@ $("#petsArrow").on("click", function() {
   $("#arrows").fadeOut(350);
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
-  $("#arrows").fadeIn(600);
-  $("#arrows").fadeOut(250);
 })
 
 $("#guitar").on("click", function() {
@@ -316,7 +306,7 @@ $("#musicArrow").on("click", function() {
   $("#ginsbergDiv").hide();
   $("#yeatsDiv").hide();
   $("#mayakovskyDiv").hide();
-  setTimeout(function(){$("#books").show()},2300);
+  setTimeout(function(){$("#books").show()},1400);
   $("#campingOutdoors").hide()
   $("#coding").hide()
   $("#arrows").fadeOut(200);
@@ -324,8 +314,6 @@ $("#musicArrow").on("click", function() {
   $("#arrows").fadeOut(350);
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
-  $("#arrows").fadeIn(600);
-  $("#arrows").fadeOut(250);
 })
 
 $("#openBook").on("click", function(){
@@ -399,7 +387,8 @@ $("#mayakovsky").on("click", function() {
   $("#mayakovskyDiv").show();
 })
 
-$("#leavePoemBtn").on("click", function() {
+$(".leavePoemBtn").on("click", function() {
+  console.log("clicked")
   $("#rilkeDiv").hide();
   $("#ferlinghettiDiv").hide();
   $("#olsonDiv").hide();
@@ -421,15 +410,57 @@ $("#booksArrow").on("click", function() {
   $("#music").hide()
   $("#books").hide()
   $("#campingOutdoors").hide()
-  setTimeout(function(){$("#campingOutdoors").show()},2300);
+  $("#trailFinder").hide()
+  setTimeout(function(){$("#campingOutdoors").show()},1400);
   $("#coding").hide()
   $("#arrows").fadeOut(200);
   $("#arrows").fadeIn(450);
   $("#arrows").fadeOut(350);
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
-  $("#arrows").fadeIn(600);
-  $("#arrows").fadeOut(250);
 })
 
+$("#trees").on("click", function(){
+  $("#outdoorsLoad").hide()
+  $("#trailFinder").show()
+})
+
+$("#trees").on("click", function(){
+  $("#outdoorsLoad").hide()
+  $("#trailFinder").show()
+})
+
+$("#campingArrow").on("click", function() {
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  $("#hiddenPets").hide()
+  $("#music").hide()
+  $("#books").hide()
+  $("#campingOutdoors").hide()
+  $("#coding").hide()
+  setTimeout(function(){$("#coding").show()},1400);
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+})
+
+$("#codingArrow").on("click", function() {
+  $("#arrows").show()
+  $("#catsAndDogs").hide()
+  $("#hiddenPets").hide()
+  $("#music").hide()
+  $("#books").hide()
+  $("#campingOutdoors").hide()
+  $("#trailFinder").hide()
+  $("#coding").hide()
+  setTimeout(function(){$("#aboutDiv").show()},1400);
+  $("#coding").hide()
+  $("#arrows").fadeOut(200);
+  $("#arrows").fadeIn(450);
+  $("#arrows").fadeOut(350);
+  $("#arrows").fadeIn(200);
+  $("#arrows").fadeOut(150);
+})
 })
