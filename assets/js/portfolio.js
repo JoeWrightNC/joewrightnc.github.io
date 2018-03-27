@@ -1,3 +1,4 @@
+$(document).ready(function () {
 
 var partCounter = 2;
 var seconds = 0
@@ -308,7 +309,13 @@ $("#musicArrow").on("click", function() {
   $("#hiddenPets").hide()
   $("#music").hide()
   $("#books").hide()
-  $("#secretPoemDiv").hide()
+  $("#bookShelfDiv").hide()
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
   setTimeout(function(){$("#books").show()},2300);
   $("#campingOutdoors").hide()
   $("#coding").hide()
@@ -323,12 +330,88 @@ $("#musicArrow").on("click", function() {
 
 $("#openBook").on("click", function(){
   $("#booksBlock").hide()
-  $("#secretPoemDiv").show()
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+  $("#bookShelfDiv").show()
 })
 
-$("#closeBook").on("click", function(){
+$("#rilke").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").show();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+})
+
+$("#ferlinghetti").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").show();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+})
+
+$("#olson").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").show();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+})
+
+$("#ginsberg").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").show();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+})
+
+$("#yeats").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").show();
+  $("#mayakovskyDiv").hide();
+})
+
+$("#mayakovsky").on("click", function() {
+  $("#bookShelfDiv").hide();
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").show();
+})
+
+$("#leavePoemBtn").on("click", function() {
+  $("#rilkeDiv").hide();
+  $("#ferlinghettiDiv").hide();
+  $("#olsonDiv").hide();
+  $("#ginsbergDiv").hide();
+  $("#yeatsDiv").hide();
+  $("#mayakovskyDiv").hide();
+  $("#bookShelfDiv").show();
+})
+
+$("#leaveBooksBtn").on("click", function(){
   $("#booksBlock").show()
-  $("#secretPoemDiv").hide()
+  $("#bookShelfDiv").hide()
 })
 
 $("#booksArrow").on("click", function() {
@@ -347,4 +430,6 @@ $("#booksArrow").on("click", function() {
   $("#arrows").fadeOut(150);
   $("#arrows").fadeIn(600);
   $("#arrows").fadeOut(250);
+})
+
 })

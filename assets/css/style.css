@@ -434,26 +434,115 @@ a:hover {
   color:white;
 }
 
-#secretPoemDiv {
-  font-size:20px;
-  font-weight:bold;
-  letter-spacing: 8px;
+#bookShelf {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  background: none;
+}
+
+.book {
+  width: 9%;
+  height: 45%;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  box-shadow: 3px 3px 5px #222;
+}
+
+#rilke {
+  left: 13.5%;
+  top: 34.25%;
+  background-color: lightblue;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.bookTitle {
+  display:block;
+  transform:rotate(90deg);
+  padding-left:12px;
+  font-weight: bold;
+}
+
+#ferlinghetti {
+  left: 26%;
+  background-color:goldenrod;
+}
+
+#olson {
+  left: 38%;
+  background-color: seagreen;
+}
+
+#ginsberg {
+  left: 51%;
+  background-color: gray;
+}
+
+#yeats {
+  left: 64%;
+  background-color: #28BAE9;
+}
+
+#mayakovsky {
+  left: 77%;
+  background-color:orangered;
+}
+
+.white {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+  background-color: #fff;
+}
+
+.grey {
+  width: 45%;
+  height: 15%;
+  position: absolute;
+  left: 27.5%;
+  top: 75%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.bar {
+  width: 75%;
+  height: 6%;
+  background-color: black;
+  position: absolute;
+  top: 80%;
+  left: 12.5%;
+  z-index: 2;
+  box-shadow: 3px 3px 5px #222;
+}
+
+.poems{
+  font-family: 'Raleway', sans-serif;
   line-height: 5px;
   position:absolute;
-  top:70px;
-  left:10%;
+  top:20%;
+  left:20%
 }
 
-.rilke {
-  font-size:30px !important;
-  letter-spacing:2px;
-  line-height:15px;
-}
-
-#closeBook {
-  width:120px;
-  height:auto;
+#leaveBooksBtn{
   position:absolute;
-  top:42%;
-  left:105%;
+  top:120%;
+  right:-20%;
 }
+
+#leavePoemBtn{
+  height:30px;
+  position:absolute;
+  top:80%;
+  right:-120%;
+}
+
+
