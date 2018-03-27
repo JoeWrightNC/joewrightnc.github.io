@@ -289,6 +289,12 @@ $("#recordBtnThree").on("click", function() {
 })
 
 $("#recordBtnFour").on("click", function() {
+  var stopOne = document.getElementById("gameMusicSource1");
+  var stopTwo = document.getElementById("gameMusicSource2");
+  var stopThree = document.getElementById("gameMusicSource3");;
+  stopOne.pause();
+  stopTwo.pause();
+  stopThree.pause();
   $("#musicFirst").show();
   $("#recordPlayerDiv").hide();
 })
