@@ -193,6 +193,218 @@ a:hover {
   transition: 0s;
 }
 
+/*resume*/
+#resumeBackground {
+  width: 100vw;
+  height: 100vh;
+  z-index:0;
+  position:fixed;
+  top:0;
+}
+
+#resumeDiv {
+  position:absolute;
+  left:0;
+  right:0;
+  max-width:80%;
+}
+
+#resumeRowOne {
+  width: 102vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index:1;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  color:white;
+  text-align:center;
+}
+
+#resumeRowOne h1 {
+  margin-top:12vh;
+  font-size: 120px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  text-shadow:black 5px 5px;
+}
+
+#resumeRowOne h3 {
+  font-size: 100px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  text-shadow:black 5px 5px;
+}
+
+#resumeDownArrow {
+  font-size:70px;
+  position:absolute;
+  bottom:0;
+  right:22vw;
+  background-color: white;
+  color: black;
+  animation: spin 8s ease-in-out infinite;
+}
+@keyframes spin {
+  2% {transform:rotate(20deg)}
+  3% {transform:rotate(-20deg)}
+  4% {transform:rotate(0deg)}
+  6%   {bottom:0px;}
+  8%  {bottom:5px;}
+  10%  {bottom:10px;}
+  12%  {bottom:15px;}
+  14% {bottom:20px;}
+  16%   {bottom:25px;}
+  18%  {bottom:30px;}
+  20%  {bottom:35px;}
+  22%  {bottom:25px;}
+  24% {bottom:15px;}
+  26% {bottom:0px;}
+}
+
+#resumeRowTwo {
+  width: 102vw;
+  height:100vh;
+  background-color:white;
+  color:black;
+  position:absolute;
+  top:100vh;
+  left:0;
+  right:0;
+  text-align:center;
+}
+
+#resumeRowTwo h2 {
+  font-size:40px;
+  font-weight:bold;
+  margin-top:5vh;
+}
+
+#resumeRowTwo h3 {
+  font-size: 25px;
+}
+
+#resumeRowTwo h4 {
+  font-size:30px;
+}
+
+#resumeRowTwo h5 {
+  font-size:20px;
+  text-align:left;
+}
+
+#resumeRowTwo li {
+  font-family: 'Raleway', sans-serif;
+  font-size:18px;
+  text-align:left;
+  z-index:10;
+}
+
+#resumeRowTwo img {
+  position:absolute;
+  left:0;
+  bottom: 0;
+  animation: wiggle 5s ease-in-out infinite;
+  z-index:1;
+}
+@keyframes wiggle {
+  0%   {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+}
+  10%  {
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    }
+  20%  {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+30%  {
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    }
+  40%  {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+50%  {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+}
+
+#resumeRowThree {
+  width: 102vw;
+  height:102vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:200vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+.experienceContainer {
+  background-color:white;
+  width:90%;
+  float:left;
+  position:relative;
+  color:black;
+  font-weight:300;
+  height:100vh;
+}
+
+.experienceTitleLead{
+  text-align:left;
+  text-transform:uppercase;
+  font-size: 100px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  margin-bottom:60px;
+  letter-spacing: 8px;
+}
+
+#brainImg {
+  width:160px;
+  height:auto;
+  transform:rotate(22deg);
+  position:absolute;
+  right:15px;
+  top:5px;
+}
+
+.companyWrapper {
+  width:30%;
+  float:left;
+  text-align:left;
+  padding-right:5%;
+  margin-bottom:60px;
+}
+
+.jobWrapper {
+  width:70%;
+  float:left;
+  text-align:left;
+  padding-right:5%;
+  margin-bottom:35px;
+}
+
+.experienceTitle {
+  color:black;
+  margin-bottom:15px;
+  font-weight: bold;
+}
+
 /*games and apps*/
 #schoolProjects {
   position:absolute;
