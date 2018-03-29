@@ -409,7 +409,7 @@ a:hover {
 
 #resumeRowFour {
   width: 102vw;
-  height:auto;
+  height:130vh;
   background-color:black;
   color:black;
   position:absolute;
@@ -421,11 +421,53 @@ a:hover {
 }
 
 #rowFourContainer {
-  background-image: url("../images/bulb.gif");
-  background-repeat: no-repeat;
-  background-position-x: -15%;
-  background-size: 60%;
+  background-color:white;
+  height:auto;
+}
 
+#typewriterImg {
+  width:60%;
+  height:auto;
+  margin-left:25px;
+}
+
+.experienceTitleLead2{
+  text-align:left;
+  text-transform:uppercase;
+  font-size: 75px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  margin-bottom:60px;
+  letter-spacing: 8px;
+  z-index:1000;
+}
+
+#resumeRowFive {
+  width: 102vw;
+  height:auto;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:430vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+#rowFiveContainer {
+  background-color:white;
+  height:auto;
+}
+
+#resumeBottom {
+  margin-bottom:15px;
+}
+
+#resumeBottomImg {
+  width:60%;
+  margin-right:15%;
+  float:right;
 }
 
 /*games and apps*/
