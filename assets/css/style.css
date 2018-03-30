@@ -505,7 +505,7 @@ a:hover {
 
 #webAdvert {
   text-align:center;
-  margin:auto;
+  margin-left:0;
   background-color:black;
   color:white;
   opacity:.8;
