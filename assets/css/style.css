@@ -545,6 +545,59 @@ a:hover {
   transform: rotate(-360deg);
 }
 
+/* Art Page*/
+#artBackground {
+  height:100vh;
+  width:auto;
+  position:fixed;
+  top:0;
+  z-index: 0;
+}
+
+#artPhilJumbo {
+  font-family: 'Raleway', sans-serif;
+  width:60%;
+  height:100vh;
+  background-color:white;
+  z-index: 1;
+  padding-top:10%;
+  position:absolute;
+  top:0;
+  left:25%;
+}
+
+#artHeader {
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  font-size:40px;
+}
+
+#artRowTwo {
+  width: 102vw;
+  height:100vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:100vh;
+  left:0;
+  right:0;
+  text-align:center;
+  text-align: center;
+}
+
+#carouselJumbo {
+  width:90%;
+  background-color:white;
+  height:80%;
+}
+
+.sr-only {
+  color:black !important;
+}
+
+.img-fluid {
+  width:100% !important;
+}
 /* About page */
 .aboutRow {
   width:80%;
@@ -650,7 +703,7 @@ a:hover {
 /*culture fit*/
 #arrows {
   width:100%;
-  height:100%
+  height:100%;
 }
 
 .cultureBlock {
