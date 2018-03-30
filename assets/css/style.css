@@ -545,6 +545,73 @@ a:hover {
   transform: rotate(-360deg);
 }
 
+/*Design Page*/
+#designRowOne {
+  margin-top:10%;
+}
+
+.designHead {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size:40px;
+  letter-spacing: 7px;
+}
+
+.card-container {
+  height: 50vh;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 15rem;
+  width: 15rem;
+  background-color:white;
+  background-size: cover;
+  cursor: pointer;
+  border:none;
+  background-blend-mode: overlay;
+}
+
+.designImg {
+  height:90%;
+  width:auto;
+  margin-top:20%;
+}
+
+.posterText {
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.posterText:hover, .posterText:focus {
+  background-color: darkgray;
+}
+
+.card:hover {
+  background: rgba(0,0,0,0.5) white;
+  background-size: cover;
+  height:170%;
+  width:auto;
+  z-index:100;
+}
+
+.card:hover .posterText {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
 /* Art Page*/
 #artBackground {
   height:100vh;
@@ -598,6 +665,7 @@ a:hover {
 .img-fluid {
   margin:auto;
 }
+
 /* About page */
 .aboutRow {
   width:80%;
