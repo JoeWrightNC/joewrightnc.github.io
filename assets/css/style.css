@@ -586,7 +586,7 @@ a:hover {
 }
 
 #carouselJumbo {
-  width:90%;
+  width:80%;
   background-color:white;
   height:80%;
 }
@@ -596,7 +596,7 @@ a:hover {
 }
 
 .img-fluid {
-  width:100% !important;
+  margin:auto;
 }
 /* About page */
 .aboutRow {
