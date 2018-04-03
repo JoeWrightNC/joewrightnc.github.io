@@ -267,11 +267,11 @@
                 </div>
               </div>
               <div class="col-xs-6" id="webAdvert">
-                <h2>Looking for a new site?</h1>
+                <!-- <h2>Looking for a new site?</h1>
                   <br>
                 <p>Currently offering steeply discounted rates for select clients.</p>
                 <p>Contact me via Email, Github or LinkedIn!</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div> 
@@ -449,7 +449,7 @@
         <h1 id="artHeader">Philosophy of Art</h1>
         <p>Art is the shield forged against the unpredictable, the sense we have of looming chaos.  Art surveys our experience and asks of us what is useful, what is worth knowing, what do we pass forward, what do we leave behind, and finally how do we order and transmit our knowing?</p>
         <p>When art is finished, we find a celebration of humanity and the marks people make on the world.  We value the exceptational in the ordinary, that which is worth telling.  We find respect for people and what they have built for themselves.</p>
-        <p>This site is about my life as a developer, which is inseparable from my life as an artist.  For me, code is a new set of paint and the web is our latest canvas.  When I think about moving individuals and brands onto the web, I ask the same questions: what is useful, what is worth knowing, what do we leave behind, what must we tell, and finally how will we tel it?  In so doing, I seek to find a celebration of the subject, esteem that which is subtly exceptional, and once considered find an order to our approach to masterfully transmit that story.</p>
+        <p>This site is about my life as a developer, which is inseparable from my life as an artist.  For me, code is a new set of paint and the web is our latest canvas.  When I think about moving individuals and brands onto the web, I ask the same questions: what is useful, what is worth knowing, what do we leave behind, what must we tell, and finally how will we tell it?  In so doing, I seek to find a celebration of the subject, esteem that which is subtly exceptional, and once considered find an order to our approach to masterfully transmit that story.</p>
         <p>Scroll down to see selections from past gallery installations.</p>
       </div>
       <div class="jumbotron" id="carouselJumbo">
@@ -552,19 +552,24 @@
         <div class="col aboutBtwnBanners">
         </div>
         <div class="col aboutBanners" id="emailCol">
-          <a href="mailto:JoeWrightWebDev@gmail.com" target="_top">
           <span class="aboutTextBanners" id="emailBanner">
             Email
           </span>
           <img class="aboutIcons" src="assets/images/email.png" alt="email">
-
-          </a>
           <div class="aboutOverlay" id="emailOverlay">
             <div class="text">Click to send me an Email</div>
           </div>
         </div>
         <div class="col aboutBtwnBanners">
         </div>
+      </div>
+      <div id="emailForm">
+        <form method="POST" action="https://formspree.io/joewrightart@gmail.com">
+          <input type="text" name="name" placeholder="Your name"><br>
+          <input type="email" name="email" placeholder="Your email"><br>
+          <textarea name="message" placeholder="Your message"></textarea><br>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
 

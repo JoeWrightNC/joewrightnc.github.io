@@ -503,14 +503,14 @@ a:hover {
   transform: rotate(360deg);
 }
 
-#webAdvert {
+/* #webAdvert {
   text-align:center;
   margin-left:0;
   background-color:black;
   color:white;
   opacity:.8;
   padding:7px;
-}
+} */
 
 /*games and apps*/
 #schoolProjects {
@@ -809,6 +809,28 @@ a:hover {
 #aboutCol:hover #pageOverlay {
   opacity: 1;
   transform: rotate(382deg);
+}
+
+#emailForm {
+  position:fixed;
+  bottom:6%;
+  right:7%;
+  width:42%;
+  height:42%;
+  text-align:center;
+  background-color:black;
+  margin:auto;
+}
+
+#emailForm input {
+  width:90%;
+  margin:2%;
+}
+#emailForm textarea {
+  width:90%;
+  padding:3%;
+  margin:2%;
+
 }
 
 /*culture fit*/

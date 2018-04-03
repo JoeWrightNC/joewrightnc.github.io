@@ -168,6 +168,7 @@ function navScreen() {
     $("#designDiv").hide()
     $("#artDiv").hide()
     $("#aboutDiv").show()
+    $("#emailForm").hide()
     $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
       width: "8%",
@@ -183,6 +184,11 @@ $("#aboutCol").on("click", function() {
   $("#partCounter").html(partCounter)
   surpriseDivTime();
 })
+
+$("#emailCol").on("click", function() {
+  $("#emailForm").show()
+})
+
 
 //culture page
 
