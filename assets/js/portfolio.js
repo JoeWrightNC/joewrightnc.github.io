@@ -203,6 +203,7 @@ $("#cultureCol").on("click", function() {
   $("#music").hide()
   $("#campingOutdoors").hide()
   $("#coding").hide()
+  $("#openSourceDiv").hide()
   $("#arrows").fadeOut(200);
   $("#arrows").fadeIn(450);
   $("#arrows").fadeOut(350);
@@ -212,7 +213,6 @@ $("#cultureCol").on("click", function() {
 })
 
 $("#petPad").on("click", function() {
-  console.log("petpadclicked")
   $("#hiddenPets").show()
   var i=0
   do {
@@ -400,7 +400,6 @@ $("#mayakovsky").on("click", function() {
 })
 
 $(".leavePoemBtn").on("click", function() {
-  console.log("clicked")
   $("#rilkeDiv").hide();
   $("#ferlinghettiDiv").hide();
   $("#olsonDiv").hide();
@@ -421,41 +420,25 @@ $("#booksArrow").on("click", function() {
   $("#hiddenPets").hide()
   $("#music").hide()
   $("#books").hide()
-  $("#campingOutdoors").hide()
-  $("#trailFinder").hide()
-  setTimeout(function(){$("#campingOutdoors").show()},1400);
   $("#coding").hide()
-  $("#arrows").fadeOut(200);
-  $("#arrows").fadeIn(450);
-  $("#arrows").fadeOut(350);
-  $("#arrows").fadeIn(200);
-  $("#arrows").fadeOut(150);
-})
-
-$("#trees").on("click", function(){
-  $("#outdoorsLoad").hide()
-  $("#trailFinder").show()
-})
-
-$("#trees").on("click", function(){
-  $("#outdoorsLoad").hide()
-  $("#trailFinder").show()
-})
-
-$("#campingArrow").on("click", function() {
-  $("#arrows").show()
-  $("#catsAndDogs").hide()
-  $("#hiddenPets").hide()
-  $("#music").hide()
-  $("#books").hide()
-  $("#campingOutdoors").hide()
-  $("#coding").hide()
+  $("#openSourceDiv").hide()
   setTimeout(function(){$("#coding").show()},1400);
+  $("#coding").hide()
   $("#arrows").fadeOut(200);
   $("#arrows").fadeIn(450);
   $("#arrows").fadeOut(350);
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
+})
+
+$("#computer").on("click", function() {
+  $("#codingFirst").hide()
+  $("#openSourceDiv").show()
+})
+
+$("#computerLeave").on("click", function() {
+  $("#openSourceDiv").hide()
+  $("#codingFirst").show()
 })
 
 $("#codingArrow").on("click", function() {
@@ -475,4 +458,6 @@ $("#codingArrow").on("click", function() {
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
 })
+
+
 })

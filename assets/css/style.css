@@ -1067,10 +1067,10 @@ a:hover {
   right:-120%;
 }
 
-#trailSearcher {
-  position: absolute;
-  top:5%;
-  left:15%;
-  border-bottom:black 10px;
+#olsonBtn {
+  height:30px;
+  position:absolute !important;
+  top:80% !important;
+  right:-70% !important;
 }
 
