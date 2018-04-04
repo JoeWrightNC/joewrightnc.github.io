@@ -588,6 +588,16 @@ a:hover {
   transform: rotate(-360deg);
 }
 
+#gifzLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+#trainLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
 /*Design Page*/
 #designRowOne {
   margin-top:10%;
