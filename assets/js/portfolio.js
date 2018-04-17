@@ -119,7 +119,7 @@ function navScreen() {
       fontSize:"small",
     }, 800)
     })
-  $("#designBtn").on("click", function(){
+/*   $("#designBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
     $("#landingDiv").hide()
     $("#surpriseDiv").hide()
@@ -156,7 +156,7 @@ function navScreen() {
       position: "absolute",
       fontSize:"small",
     }, 800)
-  })
+  }) */
   $("#aboutBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
     $("#landingDiv").hide()
