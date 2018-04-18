@@ -18,12 +18,6 @@ function surpriseDivTime() {
   var i=0
   $("#surpriseDiv").hide()
   $("#surpriseDiv").fadeIn(3000)
-/*   do {
-    $("#surpriseDiv").fadeOut(300);
-    $("#surpriseDiv").fadeIn(300);
-    i++
-  }
-  while (i<7) */
   setTimeout(function() {
     $("#surpriseDiv").fadeOut(250)}
   , 5000)
@@ -118,44 +112,6 @@ function navScreen() {
       fontSize:"small",
     }, 200)
     })
-/*   $("#designBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
-    $("#landingDiv").hide()
-    $("#surpriseDiv").hide()
-    $("#navScreenDiv").hide()
-    $("#resumeDiv").hide()
-    $("#websitesDiv").hide()
-    $("#gamesDiv").hide()
-    $("#designDiv").show()
-    $("#artDiv").hide()
-    $("#aboutDiv").hide()
-    $("#cultureFitDiv").hide()
-    $("#hamburgerBtn").animate({
-      width: "8%",
-      right: "9.5%",
-      position: "absolute",
-      fontSize:"small",
-    }, 800)
-  })
-  $("#artBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
-    $("#landingDiv").hide()
-    $("#surpriseDiv").hide()
-    $("#navScreenDiv").hide()
-    $("#resumeDiv").hide()
-    $("#websitesDiv").hide()
-    $("#gamesDiv").hide()
-    $("#designDiv").hide()
-    $("#artDiv").show()
-    $("#aboutDiv").hide()
-    $("#cultureFitDiv").hide()
-    $("#hamburgerBtn").animate({
-      width: "8%",
-      right: "9.5%",
-      position: "absolute",
-      fontSize:"small",
-    }, 800)
-  }) */
   $("#aboutBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
     $("#landingDiv").hide()
@@ -201,13 +157,6 @@ $("#bootstrapBack").on("click", function() {
 $("#responsiveBack").on("click", function() {
   window.open("https://joewrightnc.github.io/Responsive-Portfolio/index.html", "_blank")
 })
-// about page columns
-
-/* $("#aboutCol").on("click", function() {
-  partCounter++
-  $("#partCounter").html(partCounter)
-  surpriseDivTime();
-}) */
 
 $("#emailCol").on("click", function() {
   $("#emailForm").show()
@@ -486,34 +435,5 @@ $("#booksArrow").on("click", function() {
   $("#arrows").fadeIn(200);
   $("#arrows").fadeOut(150);
 })
-/* 
-$("#computer").on("click", function() {
-  $("#codingFirst").hide()
-  $("#openSourceDiv").show()
-})
-
-$("#computerLeave").on("click", function() {
-  $("#openSourceDiv").hide()
-  $("#codingFirst").show()
-})
-
-$("#codingArrow").on("click", function() {
-  $("#arrows").show()
-  $("#catsAndDogs").hide()
-  $("#hiddenPets").hide()
-  $("#music").hide()
-  $("#books").hide()
-  $("#campingOutdoors").hide()
-  $("#trailFinder").hide()
-  $("#coding").hide()
-  setTimeout(function(){$("#aboutDiv").show()},1400);
-  $("#coding").hide()
-  $("#arrows").fadeOut(200);
-  $("#arrows").fadeIn(450);
-  $("#arrows").fadeOut(350);
-  $("#arrows").fadeIn(200);
-  $("#arrows").fadeOut(150);
-}) */
-
 
 })

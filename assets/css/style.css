@@ -506,7 +506,6 @@ a:hover {
   padding:10px;
 
   
-  /* Assign the perspective to enable 3d Transform */
   	perspective :500px;
 	-webkit-perspective: 500px;
     -moz-perspective: 500px;
@@ -526,7 +525,6 @@ a:hover {
   transform: rotateX(0deg) rotateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  /* Assign The 3D Transform */
  -webkit-transform: rotateX(0deg) rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
@@ -534,13 +532,11 @@ a:hover {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
     
-  /* Transition Effect */
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
 }
-/* .flipping class for flip effect using jquery */
 
 .flipping .front
 {
@@ -561,7 +557,6 @@ a:hover {
   cursor: pointer;
   text-align:center;
   z-index:8;
-  /* Create Circle With 50% Rounded */
   border-radius:50%;
   -webkit-border-radius:50%;
    -moz-border-radius: 50%;
@@ -569,16 +564,13 @@ a:hover {
   transform:rotateX(-180deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  /* Assign The 3D Transform */
     -webkit-transform:rotateX(-180deg);
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     -moz-transform:rotateX(-180deg);
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
-  
-  /* Transition Effect */
-  transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
@@ -591,43 +583,6 @@ a:hover {
   -webkit-transform: rotateX(0deg) rotateY(0deg);
 	-moz-transform:rotateX(0deg) rotateY(0deg);
 }
-
-/*
-.webOverlay {
-  position: fixed;
-  bottom: 5%;
-  left: 80%;
-  right: 0;
-  height: 300px;
-  width: 150px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-
-#bernarooLink:hover .webOverlay {
-  opacity: 1;
-  transform: rotate(360deg);
-}
-
-#bootstrapPortLink:hover .webOverlay {
-  opacity: 1;
-  transform: rotate(360deg);
-}
-
-#responsivePortLink:hover .webOverlay {
-  opacity: 1;
-  transform: rotate(360deg);
-} */
-
-/* #webAdvert {
-  text-align:center;
-  margin-left:0;
-  background-color:black;
-  color:white;
-  opacity:.8;
-  padding:7px;
-} */
 
 /*games and apps*/
 #schoolProjects {
@@ -714,126 +669,6 @@ a:hover {
   transform: rotate(-360deg);
 }
 
-/*
-#designRowOne {
-  margin-top:10%;
-}
-
-.designHead {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size:40px;
-  letter-spacing: 7px;
-}
-
-.card-container {
-  height: 50vh;
-}
-
-.center-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  height: 15rem;
-  width: 15rem;
-  background-color:white;
-  background-size: cover;
-  cursor: pointer;
-  border:none;
-  background-blend-mode: overlay;
-}
-
-.designImg {
-  height:90%;
-  width:auto;
-  margin-top:20%;
-}
-
-.posterText {
-  font-family: 'Raleway', sans-serif;
-  background-color: black;
-  border: none;
-  box-shadow: none;
-  padding: 10px;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.posterText:hover, .posterText:focus {
-  background-color: darkgray;
-}
-
-.card:hover {
-  background: rgba(0,0,0,0.5) white;
-  background-size: cover;
-  height:170%;
-  width:auto;
-  z-index:100;
-}
-
-.card:hover .posterText {
-  transform: translateY(10px);
-  opacity: 1;
-}
-
-#artBackground {
-  height:100vh;
-  width:auto;
-  position:fixed;
-  top:0;
-  z-index: 0;
-}
-
-#artPhilJumbo {
-  font-family: 'Raleway', sans-serif;
-  width:60%;
-  height:100vh;
-  background-color:white;
-  z-index: 1;
-  padding-top:10%;
-  position:absolute;
-  top:0;
-  left:25%;
-}
-
-#artHeader {
-  font-family: 'Roboto', sans-serif;
-  font-weight:bold;
-  font-size:40px;
-}
-
-#artRowTwo {
-  width: 102vw;
-  height:100vh;
-  background-color:black;
-  color:black;
-  position:absolute;
-  top:100vh;
-  left:0;
-  right:0;
-  text-align:center;
-  text-align: center;
-}
-
-#carouselJumbo {
-  width:80%;
-  background-color:white;
-  height:80%;
-}
-
-.sr-only {
-  color:black !important;
-}
-
-.img-fluid {
-  margin:auto;
-}
- */
 /* About page */
 .aboutRow {
   width:80%;
@@ -871,73 +706,6 @@ a:hover {
   position:absolute;
   top:35%;
 }
-/* .aboutOverlay {
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-  height: 40px;
-  width: 700%;
-  color:white;
-  z-index:100;
-  font-size:35px;
-  font-weight: bold;
-  letter-spacing: 10px;
-}
-
-#linkedOverlay {
-  position: absolute;
-  top:70vh; 
-  left:-25%;
-}
-
-#linkedCol:hover #linkedOverlay {
-  opacity: 1;
-  transform: rotate(377deg);
-}
-
-#emailOverlay {
-  position:absolute;
-  top:70vh; 
-/*   right: -20%;
-  }
-
-#emailCol:hover #emailOverlay {
-  opacity: 1;
-  transform: rotate(377deg);
-}
-
-#gitOverlay {
-   position:absolute;
-  top:70vh; 
-   left: 400%;
- }
-
-#gitCol:hover #gitOverlay {
-  opacity: 1;
-  transform: rotate(377deg);
-}
-
-#cultureOverlay {
-  position:absolute;
-  top:70vh; 
-   left: 150%;
- }
-
-#cultureCol:hover #cultureOverlay {
-  opacity: 1;
-  transform: rotate(377deg);
-}
-
-#pageOverlay {
-  position:absolute;
-  top:70vh; 
-   right:-200px;
- }
-
-#aboutCol:hover #pageOverlay {
-  opacity: 1;
-  transform: rotate(377deg);
-} */
 
 #emailForm {
   position:fixed;
