@@ -46,7 +46,7 @@ a:hover {
   text-align:right;
   z-index: 100;
   outline: none;
-  animation: shake 2s ease-in-out infinite;
+  animation: shake 1.5s ease-in-out infinite;
   animation-delay: 6.5s;
   animation-iteration-count: 2;
 }
