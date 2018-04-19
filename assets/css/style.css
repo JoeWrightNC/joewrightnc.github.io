@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -145,12 +145,13 @@ a:hover {
   background-color:white;
   border-color:white;
   text-align:right;
+  text-transform: uppercase;
   font-weight:900;
   font-size:40px;
   margin-top:5px;
   margin-bottom:5px;
   padding-right:10%;
-  letter-spacing:10px;
+  letter-spacing:8px;
 }
 
 .navUL {
@@ -304,7 +305,7 @@ a:hover {
 }
 
 #resumeRowTwo li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size:18px;
   text-align:left;
   z-index:10;
@@ -418,6 +419,10 @@ a:hover {
   color:black;
   margin-bottom:15px;
   font-weight: bold;
+}
+
+.experienceTitle a {
+  color:black;
 }
 
 #resumeRowFour {
@@ -612,7 +617,7 @@ a:hover {
 }
 
 .text {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -694,6 +699,7 @@ a:hover {
   text-orientation: sideways;
   word-wrap: break-word;
   text-align:justify;
+  text-transform:uppercase;
   position:absolute;
   top:25%;
   font-size:16px;
@@ -730,9 +736,11 @@ a:hover {
 }
 
 /*culture fit*/
-#arrows {
-  width:100%;
-  height:100%;
+#catLoader {
+  position:relative;
+  top:0;
+  left:0;
+  height:100vh;
 }
 
 .cultureBlock {
@@ -748,7 +756,6 @@ a:hover {
 }
 
 .cultureHeading {
-  font-family: 'Roboto', sans-serif !important;
   font-size:25px;
   font-weight: bold;
   letter-spacing: 12px;
@@ -930,7 +937,7 @@ a:hover {
 }
 
 .poems{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 5px;
   position:absolute;
   top:20%;
@@ -938,7 +945,7 @@ a:hover {
 }
 
 #ginsbergDiv {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 15px;
   position:absolute;
   top:20%;
