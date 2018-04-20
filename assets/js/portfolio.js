@@ -72,7 +72,7 @@ function navScreen() {
       right: "10%",
       position: "absolute",
       fontSize:"small",
-    }, 200)
+    }, 300)
   })
   $("#websitesBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -91,7 +91,7 @@ function navScreen() {
       right: "10%",
       position: "absolute",
       fontSize:"small",
-    }, 200)
+    }, 300)
   })
   $("#gamesBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -110,7 +110,7 @@ function navScreen() {
       right: "10%",
       position: "absolute",
       fontSize:"small",
-    }, 200)
+    }, 300)
     })
   $("#aboutBtn").on("click", function(){
     $("#hamburgerBtn").html("Explore More?")
@@ -130,7 +130,7 @@ function navScreen() {
       right: "10%",
       position: "absolute",
       fontSize:"small",
-    }, 200)
+    }, 300)
   })
 }
 
