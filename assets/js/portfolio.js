@@ -1,12 +1,3 @@
-document.getElementsByTagName("body")[0].style.display = "none";
-
-$(document).ready(function () {
-
-  document.getElementsByTagName("body")[0].style.display = "block";
-
-var partCounter = 2;
-var seconds = 0
-
 $("#landingDiv").show()
 $("#navScreenDiv").hide()
 $("#resumeDiv").hide()
@@ -17,6 +8,10 @@ $("#artDiv").hide()
 $("#aboutDiv").hide()
 $("#cultureFitDiv").hide()
 
+$(document).ready(function () {
+
+var partCounter = 2;
+var seconds = 0
 
 function surpriseDivTime() {
   var i=0
