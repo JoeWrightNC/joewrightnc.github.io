@@ -1,4 +1,8 @@
+$(document).hide()
+
 $(document).ready(function () {
+
+$(document).show()
 
 var partCounter = 2;
 var seconds = 0
