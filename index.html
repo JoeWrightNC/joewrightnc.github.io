@@ -26,7 +26,7 @@
     <div id="landingDiv">
       <div id="nameLines">
         <p>Joe</p>
-        <p>Wright</p>
+        <p id="testingTester">Wright</p>
         <div id="whatItDo">
           <p>Web|Art|Etc</p>
         </div>
@@ -59,16 +59,16 @@
           </div>
         </div>
         <div class="row" id="resumeRowTwo">
-          <div class="col">
+          <div class="col-12">
             <h2>Profile</h2>
             <h4>I'm A Creative Full Stack Web Developer</h4>
             <hr>
             <div class="row">
-              <div class="col">
+              <div class="col-12 col-md-4" id="handHeldCol">
                 <h3>Technologies:</h3>
                 <img src="assets/images/handHeldOne.jpg" alt="handHeldOne" id="handHeldOne">
               </div>
-              <div class="col">
+              <div class="col-12 col-md-4">
                 <br><br>
                 <h5>Day-to-Day:</h5>
                 <br>
@@ -197,7 +197,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col">
+              <div class="col-12 col-md-4">
                 <br><br>
                 <h5>Experience With:</h5>
                 <br>
@@ -368,7 +368,7 @@
             </div>
           </div>
           <div class="row webRow">
-            <div class="col-xs-3">
+            <div class="col-12 col-md-3">
               <div class="webImgContainer" id="listenHereLink">
                 <div class="circle">
                   <div class="front">
@@ -386,7 +386,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-12 col-md-3">
                 <div class="webImgContainer" id="bernarooLink">
                   <div class="circle">
                     <div class="front">
@@ -409,13 +409,13 @@
         </div>
         <div id="schoolProjects">
           <div class="row">
-            <div class="col">
-               <h1 class="projText">SCHOLASTIC:</h1>
+              <div class="col-12 col-md-3">
+                  <h1 class="projText">SCHOLASTIC:</h1>
             </div>
           </div>
             <div class="row webRow">
-              <div class="col-xs-3">
-                <div class="webImgContainer" id="bootstrapPortLink">
+                <div class="col-12 col-md-3">
+                    <div class="webImgContainer" id="bootstrapPortLink">
                   <div class="circle">
                   <div class="front">
                     <img width="250" height="250" src="assets/images/bootstrapSized.png" alt="bootstrapImg">
@@ -433,8 +433,8 @@
                 </div>
                 </div>
               </div>
-              <div class="col-xs-3">
-                <div class="webImgContainer" id="responsivePortLink">
+              <div class="col-12 col-md-3">
+                  <div class="webImgContainer" id="responsivePortLink">
                   <div class="circle">
                   <div class="front">
                     <img width="250" height="250" src="assets/images/responsiveSized.png" alt="responsiveImg">
@@ -451,103 +451,136 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6" id="webAdvert">
-                </div>
             </div>
           </div>
         </div> 
       </div>
     </div>
     <div id="gamesDiv">
-      <div id="nonSchoolGames">
+      <div id="schoolGames">
         <div class="gamesImgContainer">
-        </div>
-      </div>
-      <!--School Work Div-->
-      <div id="schoolProjects">
-        <div class="row">]
-          <div class="col">
-             <h1 class="projText">SCHOLASTIC:</h1>
-          </div>
-        </div>
-          <div class="row" id="gameImgRow">
+        <div class="row">
             <div class="col">
-              <div class="gamesImgContainer" id="vanGoghLink">
-                <a href="https://joewrightnc.github.io/Hangman-Game/" target="_blank">
-                  <img id="vangoghImg" class="gamesImg" src="assets/images/plus.png" alt="vanGoghImg">
-                  <div class="gamesOverlay">
-                    <div class="text">Vanilla JS Based Hangman -- Van Gogh Loses His Ear Edition; Click to Play</div>
+               <h1 class="projText">SCHOLASTIC:</h1>
+            </div>
+          </div>
+          <div class="row webRow">
+            <div class="col-xs-3">
+              <div class="webImgContainer" id="vanGoghLink">
+                <div class="circle">
+                  <div class="front">
+                    <img width="250" height="250" src="assets/images/hangman.png" alt="hangmanImg">
                   </div>
-                </a>
+                  <div class="circle">
+                    <div class="back" id="hangmanBack">
+                      <br>
+                      <br>
+                      <p class="text">
+                        Online Game.  <br> Utilized Vanilla Javascript to build a fun unique version of online Hangman.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          <div class="col">
-            <img id="arrow1" class="gamesArrowImg" src="assets/images/carat.png" alt="arrow">
-          </div>
-          <div class="col">
-            <div class="gamesImgContainer" id="crystalLink">
-              <a href="https://joewrightnc.github.io/Crystal-Game/" target="_blank">
-                <img id="crystalsImg" class="gamesImg" src="assets/images/plus.png" alt="crystalsImg">
-                <div class="gamesOverlay">
-                  <div class="text">JQuery Based Strategy Game; Click to Play</div>
+            <div class="col-xs-3">
+                <div class="webImgContainer" id="crystalGameLink">
+                  <div class="circle">
+                    <div class="front">
+                      <img width="250" height="250" src="assets/images/crystalGame.png" alt="crystalGameImg">
+                    </div>
+                    <div class="circle">
+                      <div class="back" id="crystalGameBack">
+                        <br>
+                        <br>
+                        <br>
+                        <p class="text">
+                          jQuery game.  Determine the value of each object then hit total using click events.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col">
-            <img id="arrow2" class="gamesArrowImg" src="assets/images/carat.png" alt="arrow">
-          </div>
-          <div class="col">
-            <div class="gamesImgContainer" id="rpgLink">
-              <a href="https://joewrightnc.github.io/week-4-game/" target="_blank">
-                <img id="rpgImg" class="gamesImg" src="assets/images/plus.png" alt="rpgImg">
-                <div class="gamesOverlay">
-                  <div class="text">Jquery Based Super Smash Bros RPG; Click to Play</div>
+              </div>
+              <div class="col-xs-3">
+                  <div class="webImgContainer" id="superSmashLink">
+                    <div class="circle">
+                      <div class="front">
+                        <img width="250" height="250" src="assets/images/superSmash.png" alt="superSmashImg">
+                      </div>
+                      <div class="circle">
+                        <div class="back" id="superSmashBack">
+                          <br>
+                          <br>
+                          <br>
+                          <p class="text">
+                            jQuery RPG Super Smash Bros Game.  Choose your character, then the order of your opponents carefully!.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col">
-            <img id="arrow3" class="gamesArrowImg" src="assets/images/carat.png" alt="arrow">
-          </div>
-          <div class="col">
-            <div class="gamesImgContainer" id="triviaLink">
-              <a href="https://joewrightnc.github.io/TriviaGame/" target="_blank">
-                <img id="triviaImg" class="gamesImg" src="assets/images/plus.png" alt="triviaImg">
-                <div class="gamesOverlay">
-                  <div class="text">Multi Category Trivia Game using Jquery + Timers</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col">
-            <img id="arrow4" class="gamesArrowImg" src="assets/images/carat.png" alt="arrow">
-          </div>
-          <div class="col">
-            <div class="gamesImgContainer" id="gifzLink">
-              <a href="https://joewrightnc.github.io/GifApp/" target="_blank">
-                <img id="gifAppcoImg" class="gamesImg" src="assets/images/plus.png" alt="gifAppImg">
-                <div class="gamesOverlay">
-                  <div class="text">NETGIFZ: A Netflix style interface for gif browsing</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col">
-            <img id="arrow4" class="gamesArrowImg" src="assets/images/carat.png" alt="arrow">
-          </div>
-          <div class="col">
-            <div class="gamesImgContainer" id="trainLink">
-              <a href="https://joewrightnc.github.io/TrainScheduler/" target="_blank">
-                <img id="trainImg" class="gamesImg" src="assets/images/plus.png" alt="trainAppImg">
-                <div class="gamesOverlay">
-                  <div class="text">Train Scheduler: Commuter scheduling app utilizing Firebase to host scheduling data</div>
-                </div>
-              </a>
-            </div>
+                <div class="col-xs-3">
+                    <div class="webImgContainer" id="boozyTriviaLink">
+                      <div class="circle">
+                        <div class="front">
+                          <img width="250" height="250" src="assets/images/boozyTrivia.png" alt="boozyTriviaImg">
+                        </div>
+                        <div class="circle">
+                          <div class="back" id="boozyTriviaBack">
+                            <br>
+                            <br>
+                            <br>
+                            <p class="text">
+                              Multi-Category Trivia Game built with jQuery, advanced array methods, and aSync timing functions.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                      <div class="webImgContainer" id="netgifzLink">
+                        <div class="circle">
+                          <div class="front">
+                            <img width="250" height="250" src="assets/images/netgifz.png" alt="netigfzImg">
+                          </div>
+                          <div class="circle">
+                            <div class="back" id="netgifzBack">
+                              <br>
+                              <br>
+                              <br>
+                              <p class="text">
+                                NETGIFZ: A Netflix style interface for gif browsing.  Utilizes AJax and advanced CSS3, no carousel libraries.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="webImgContainer" id="trainGameLink">
+                          <div class="circle">
+                            <div class="front">
+                              <img width="250" height="250" src="assets/images/trainGame.png" alt="trainGameImg">
+                            </div>
+                            <div class="circle">
+                              <div class="back" id="trainGameBack">
+                                <br>
+                                <br>
+                                <br>
+                                <p class="text">
+                                  Train Scheduling App utilizing Firebase for storage, jQuery, and moment.js.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
 
     <div id="aboutDiv">
@@ -592,10 +625,10 @@
           <input type="text" name="name" placeholder="Your name"><br>
           <input type="email" name="email" placeholder="Your email"><br>
           <textarea name="message" placeholder="Your message"></textarea><br>
-          <button type="submit">Send</button>
+          <button type="submit" class="mobileButton">Send</button>
         </form>
         <br>
-        <button id="emailCancel">Cancel</button>
+        <button id="emailCancel" class="mobileButton">Cancel</button>
 
       </div>
     </div>

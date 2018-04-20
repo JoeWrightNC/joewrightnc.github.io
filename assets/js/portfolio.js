@@ -1,15 +1,15 @@
-$("#landingDiv").show()
-$("#navScreenDiv").hide()
-$("#resumeDiv").hide()
-$("#websitesDiv").hide()
-$("#gamesDiv").hide()
-$("#designDiv").hide()
-$("#artDiv").hide()
-$("#aboutDiv").hide()
-$("#cultureFitDiv").hide()
 
 $(document).ready(function () {
 
+  $("#landingDiv").show()
+  $("#navScreenDiv").hide()
+  $("#resumeDiv").hide()
+  $("#websitesDiv").hide()
+  $("#gamesDiv").hide()
+  $("#designDiv").hide()
+  $("#artDiv").hide()
+  $("#aboutDiv").hide()
+  $("#cultureFitDiv").hide()
 var partCounter = 2;
 var seconds = 0
 

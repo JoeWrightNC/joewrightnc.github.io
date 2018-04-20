@@ -490,12 +490,10 @@ a:hover {
 }
 /*web projects*/
 .webImgContainer {
-  margin-right:5vw;
-  margin-left:5vw;
+  margin:5vw;
 }
 
 .webRow {
-  overflow-x:scroll;
   height:300px !important;
 }
 
@@ -591,15 +589,17 @@ a:hover {
 
 /*games and apps*/
 #schoolProjects {
-  position:absolute;
-  top:50%;
+  width:100%;
+}
+
+#schoolGames {
   width:100%;
 }
 
 .projText {
   font-size: 50px;
   padding-bottom:10px;
-  padding-top:35px;
+  padding-top:45px;
   font-weight: bold;
 }
 
@@ -702,6 +702,7 @@ a:hover {
   text-transform:uppercase;
   position:absolute;
   top:25%;
+  left:5%;
   font-size:16px;
   font-weight:bold;
 }
@@ -711,6 +712,7 @@ a:hover {
   height:auto;
   position:absolute;
   top:35%;
+  left:15%;
 }
 
 #emailForm {
@@ -977,3 +979,320 @@ a:hover {
   right:-70% !important;
 }
 
+#testingTester {
+  color:black;
+}
+
+/* tablet media queries */
+@media all and (min-width: 768px) and (max-width: 1060px) {
+  #testingTester {
+    color:green;
+  }
+  /*nav stuff*/
+#hamburgerBtn {
+  height: 12vw;
+  width: 8vw;
+  font-size:small;
+  text-align:center;
+  border-radius:50%;
+}
+
+#bunTopper {
+  display: none;
+}
+
+.navTron {
+  margin-left:2vw;
+  opacity:.85;
+  z-index:10000;
+}
+
+.navBtns {
+  text-align:left;
+}
+}
+
+@media all and (max-width: 767px) {
+  #testingTester {
+    color:red;
+  }
+  /*nav stuff*/
+  #hamburgerBtn {
+    height: 12vw;
+    width: 8vw;
+    font-size:small;
+    text-align:center;
+    border-radius:50%;
+  }
+
+  #bunTopper {
+    display: none;
+  }
+
+  #surpriseDiv {
+    width: 90vw;
+    height: auto;
+    font-size:20px;
+    letter-spacing: 2px;
+    line-height: 18px;
+    position: absolute;
+    top:35vh;
+    left:0;
+  }
+
+  #nameLines {
+    font-size:30px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    line-height: 26px;
+    transform: rotate(270deg);
+    position: absolute;
+    left:2vw;
+    bottom:10vh;
+  }
+
+  #nameLines p {
+    margin-bottom:0rem !important;
+  }
+  
+  #whatItDo {
+    font-size:30px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    line-height: 30px;
+    transform: rotate(90deg);
+    position: relative;
+    top:20vw;
+    left:-20vw;
+  }
+
+  .navTron {
+    margin-left:2vw;
+    opacity:.85;
+    z-index:10000;
+  }
+  
+  .navBtns {
+    text-align:left;
+    font-size:20px;
+    letter-spacing:2px;
+  }
+  
+  /*resume*/
+#resumeBackground {
+  width: auto;
+  height: 100vh;
+  z-index:0;
+  position:fixed;
+  top:0;
+}
+
+#resumeRowOne h1 {
+  margin-top:45vh;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow:black 3px 3px;
+}
+
+#resumeRowOne h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight:bold;
+  text-shadow:black 2px 2px;
+}
+
+#resumeDownArrow {
+  font-size:70px;
+  position:absolute;
+  bottom:0;
+  right:22vw;
+  background-color: white;
+  color: black;
+  animation: lift 5.0s ease-in-out infinite;
+}
+@keyframes lift {
+  6%   {bottom:0px;}
+  8%  {bottom:5px;}
+  10%  {bottom:10px;}
+  12%  {bottom:15px;}
+  14% {bottom:20px;}
+  16%   {bottom:25px;}
+  18%  {bottom:30px;}
+  20%  {bottom:35px;}
+  22%  {bottom:25px;}
+  24% {bottom:15px;}
+  26% {bottom:0px;}
+}
+
+#resumeRowTwo {
+  width: 102vw;
+  height:130vh;
+  background-color:white;
+  color:black;
+  position:absolute;
+  top:100vh;
+  left:0;
+  right:0;
+  text-align:center;
+}
+
+#resumeRowTwo h2 {
+  font-size:30px;
+}
+
+/* #resumeRowTwo li {
+  font-family: 'Oswald', sans-serif;
+  font-size:18px;
+  text-align:left;
+  z-index:10;
+} */
+
+.ability-score {
+  position:absolute;
+  left:50vw;
+}
+
+#handHeldCol {
+  display:none;
+}
+
+#resumeRowTwo img {
+  display:none;
+}
+
+#resumeRowThree {
+  height:130vh;
+  position:absolute;
+  top:230vh;
+  left:0;
+  right:0;
+}
+
+.experienceContainer {
+  height:130vh;
+}
+
+.experienceTitleLead{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight:bold;
+  margin-top:15px;
+  margin-bottom:25px;
+}
+
+#brainImg {
+  width:60px;
+  height:auto;
+  position:absolute;
+  right:20px;
+  top:10px;
+  z-index:0;
+}
+
+.companyWrapper {
+  font-size:12px;
+}
+
+.jobWrapper {
+  font-size:12px;
+}
+
+#resumeRowFour {
+  width: 102vw;
+  height:200vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:360vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+#rowFourContainer {
+  background-color:white;
+  height:auto;
+}
+
+#typewriterImg {
+  width:60%;
+  height:auto;
+  margin-left:25px;
+}
+
+.experienceTitleLead2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom:30px;
+}
+
+#resumeRowFive {
+  position:absolute;
+  top:560vh;
+  left:0;
+  right:0;
+}
+
+/*web projects*/
+#nonSchoolProjects {
+  margin-top:10vh;
+}
+.webRow {
+  height:auto !important;
+}
+
+#schoolGames {
+  margin-top:10vh;
+}
+/*about contact*/
+.aboutTextBanners {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  word-wrap: break-word;
+  text-align:justify;
+  text-transform:uppercase;
+  position:absolute;
+  left:20%;
+  top:40%;
+  font-size:10px;
+  font-weight:normal;
+}
+
+#emailForm {
+  position:fixed;
+  bottom:6%;
+  right:7%;
+  width:80%;
+  height:40%;
+  text-align:center;
+  background-color:black;
+  margin:auto;
+}
+
+.mobileButton {
+  background-color:white;
+}
+
+#cultureFitDiv p {
+  font-size:12px !important;
+}
+
+.cultureHeading {
+  font-size: 16px !important;
+}
+
+#bookShelf {
+  width: 300px;
+  height: 200px;
+}
+
+.bookTitle {
+    font-size:10px;
+    font-weight: bold;
+}
+
+}
