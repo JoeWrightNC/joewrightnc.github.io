@@ -516,6 +516,7 @@ a:hover {
 }
 
 .front img{
+  box-shadow: black 5px 3px;
   border-radius:50%;
    -moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -1013,9 +1014,6 @@ a:hover {
 }
 
 @media all and (max-width: 767px) {
-  #testingTester {
-    color:red;
-  }
   /*nav stuff*/
   #hamburgerBtn {
     height: 12vw;
@@ -1104,29 +1102,6 @@ a:hover {
   text-shadow:black 2px 2px;
 }
 
-#resumeDownArrow {
-  font-size:70px;
-  position:absolute;
-  bottom:0;
-  right:22vw;
-  background-color: white;
-  color: black;
-  animation: lift 5.0s ease-in-out infinite;
-}
-@keyframes lift {
-  6%   {bottom:0px;}
-  8%  {bottom:5px;}
-  10%  {bottom:10px;}
-  12%  {bottom:15px;}
-  14% {bottom:20px;}
-  16%   {bottom:25px;}
-  18%  {bottom:30px;}
-  20%  {bottom:35px;}
-  22%  {bottom:25px;}
-  24% {bottom:15px;}
-  26% {bottom:0px;}
-}
-
 #resumeRowTwo {
   width: 102vw;
   height:130vh;
@@ -1142,13 +1117,6 @@ a:hover {
 #resumeRowTwo h2 {
   font-size:30px;
 }
-
-/* #resumeRowTwo li {
-  font-family: 'Oswald', sans-serif;
-  font-size:18px;
-  text-align:left;
-  z-index:10;
-} */
 
 .ability-score {
   position:absolute;

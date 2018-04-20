@@ -157,6 +157,33 @@ $("#responsiveBack").on("click", function() {
   window.open("https://joewrightnc.github.io/Responsive-Portfolio/index.html", "_blank")
 })
 
+//games page
+$("#hangmanBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/Hangman-Game/index.html", "_blank")
+})
+
+$("#crystalGameBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/Crystal-Game/index.html", "_blank")
+})
+
+$("#superSmashBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/week-4-game/index.html", "_blank")
+})
+
+$("#boozyTriviaBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/TriviaGame/", "_blank")
+})
+
+$("#netgifzBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/GifApp/", "_blank")
+})
+
+$("#trainGameBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/TrainScheduler/", "_blank")
+})
+
+
+//about page
 $("#emailCol").on("click", function() {
   $("#emailForm").show()
 })
