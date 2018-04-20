@@ -41,7 +41,7 @@ $("#hamburgerBtn").on("click", function(){
   $("#hamburgerBtn").animate({
     width: "100vh",
     right:"-25%",
-  }, 800)
+  }, 400)
   $("#resumeDiv").hide()
 $("#websitesDiv").hide()
 $("#gamesDiv").hide()
