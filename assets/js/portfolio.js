@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
 
+  $("body").show()
   $("#landingDiv").show()
   $("#navScreenDiv").hide()
   $("#resumeDiv").hide()
