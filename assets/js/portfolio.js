@@ -1,8 +1,8 @@
-$(document).hide()
+document.getElementsByTagName("body")[0].style.display = "none";
 
 $(document).ready(function () {
 
-$(document).show()
+  document.getElementsByTagName("body")[0].style.display = "block";
 
 var partCounter = 2;
 var seconds = 0
