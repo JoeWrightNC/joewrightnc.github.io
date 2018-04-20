@@ -55,7 +55,7 @@ function navScreen() {
   $("#landingDiv").hide()
   $("#navScreenDiv").show()
   $("#resumeBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
+    $("#hamburgerBtn").html("NAV")
     $("#landingDiv").hide()
     $("#surpriseDiv").hide()
     $("#navScreenDiv").hide()
@@ -67,14 +67,14 @@ function navScreen() {
     $("#aboutDiv").hide()
     $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
-      width: "8%",
+      width: "10%",
       right: "10%",
       position: "absolute",
       fontSize:"small",
     }, 300)
   })
   $("#websitesBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
+    $("#hamburgerBtn").html("NAV")
     $("#landingDiv").hide()
     $("#surpriseDiv").hide()
     $("#navScreenDiv").hide()
@@ -86,14 +86,14 @@ function navScreen() {
     $("#aboutDiv").hide()
     $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
-      width: "8%",
+      width: "10%",
       right: "10%",
       position: "absolute",
       fontSize:"small",
     }, 300)
   })
   $("#gamesBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
+    $("#hamburgerBtn").html("NAV")
     $("#landingDiv").hide()
     $("#surpriseDiv").hide()
     $("#navScreenDiv").hide()
@@ -105,14 +105,14 @@ function navScreen() {
     $("#aboutDiv").hide()
     $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
-      width: "8%",
+      width: "10%",
       right: "10%",
       position: "absolute",
       fontSize:"small",
     }, 300)
     })
   $("#aboutBtn").on("click", function(){
-    $("#hamburgerBtn").html("Explore More?")
+    $("#hamburgerBtn").html("NAV")
     $("#landingDiv").hide()
     $("#surpriseDiv").hide()
     $("#navScreenDiv").hide()
@@ -125,7 +125,7 @@ function navScreen() {
     $("#emailForm").hide()
     $("#cultureFitDiv").hide()
     $("#hamburgerBtn").animate({
-      width: "8%",
+      width: "10%",
       right: "10%",
       position: "absolute",
       fontSize:"small",
