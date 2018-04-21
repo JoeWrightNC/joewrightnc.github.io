@@ -495,6 +495,7 @@ a:hover {
 
 .webRow {
   height:300px !important;
+  margin-top: -5vh !important;
 }
 
 .circle
@@ -507,12 +508,24 @@ a:hover {
    -moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
   padding:10px;
-
-  
   	perspective :500px;
 	-webkit-perspective: 500px;
     -moz-perspective: 500px;
-  
+}
+
+.circleHeading {
+  font-family: 'Oswald', sans-serif;
+  font-size:30px;
+  font-weight: 900;
+  text-align:center;
+}
+
+.circleHeadingTwo {
+  font-family: 'Oswald', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  text-align:center;
+  font-style: italic;
 }
 
 .front img{
@@ -591,6 +604,7 @@ a:hover {
 /*games and apps*/
 #schoolProjects {
   width:100%;
+  margin-top:15vh;
 }
 
 #schoolGames {
@@ -602,20 +616,9 @@ a:hover {
   padding-bottom:10px;
   padding-top:45px;
   font-weight: bold;
+  text-transform: uppercase
 }
 
-.gamesOverlay {
-  position: absolute;
-  top: -200%;
-  bottom: 0;
-  left: -30%;
-  right: 0;
-  height: 300px;
-  width: 150px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
 
 .text {
   font-family: 'Oswald', sans-serif;
