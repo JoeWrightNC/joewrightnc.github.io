@@ -988,7 +988,7 @@ a:hover {
 }
 
 /* tablet media queries */
-@media all and (min-width: 768px) and (max-width: 1060px) {
+@media all and (min-width: 768px) and (max-width: 1260px) {
   #testingTester {
     color:green;
   }
