@@ -183,6 +183,10 @@ $("#trainGameBack").on("click", function() {
   window.open("https://joewrightnc.github.io/TrainScheduler/", "_blank")
 })
 
+$("#liriBack").on("click", function() {
+  window.open("https://github.com/JoeWrightNC/liri-node-app", "_blank")
+})
+
 
 //about page
 $("#emailCol").on("click", function() {
