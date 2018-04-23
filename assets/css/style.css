@@ -989,9 +989,6 @@ a:hover {
 
 /* tablet media queries */
 @media all and (min-width: 768px) and (max-width: 1260px) {
-  #testingTester {
-    color:green;
-  }
   /*nav stuff*/
 #hamburgerBtn {
   height: 12vw;
