@@ -187,6 +187,10 @@ $("#liriBack").on("click", function() {
   window.open("https://github.com/JoeWrightNC/liri-node-app", "_blank")
 })
 
+$("#pokedexBack").on("click", function() {
+  window.open("https://github.com/JoeWrightNC/pokedex", "_blank")
+})
+
 
 //about page
 $("#emailCol").on("click", function() {
