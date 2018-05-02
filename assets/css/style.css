@@ -489,6 +489,11 @@ a:hover {
   cursor: pointer;
 }
 /*web projects*/
+
+#websitesTopText {
+  padding-top:15vh !important;
+}
+
 .webImgContainer {
   margin:5vw;
 }
@@ -602,6 +607,10 @@ a:hover {
 }
 
 /*games and apps*/
+#gamesTopText {
+  padding-top:15vh !important;
+}
+
 #schoolProjects {
   width:100%;
   margin-top:15vh;
