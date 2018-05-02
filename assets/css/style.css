@@ -275,7 +275,7 @@ a:hover {
 
 #resumeRowTwo {
   width: 102vw;
-  height:100vh;
+  height:125vh;
   background-color:white;
   color:black;
   position:absolute;
@@ -357,11 +357,11 @@ a:hover {
 
 #resumeRowThree {
   width: 102vw;
-  height:100vh;
+  height:140vh;
   background-color:black;
   color:black;
   position:absolute;
-  top:200vh;
+  top:225vh;
   left:0;
   right:0;
   text-align:center;
@@ -375,7 +375,7 @@ a:hover {
   position:relative;
   color:black;
   font-weight:300;
-  height:100vh;
+  height:130vh;
 }
 
 .experienceTitleLead{
@@ -427,11 +427,11 @@ a:hover {
 
 #resumeRowFour {
   width: 102vw;
-  height:130vh;
+  height:160vh;
   background-color:black;
   color:black;
   position:absolute;
-  top:300vh;
+  top:350vh;
   left:0;
   right:0;
   text-align:center;
@@ -466,7 +466,7 @@ a:hover {
   background-color:black;
   color:black;
   position:absolute;
-  top:430vh;
+  top:500vh;
   left:0;
   right:0;
   text-align:center;
