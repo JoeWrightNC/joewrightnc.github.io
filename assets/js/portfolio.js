@@ -142,8 +142,12 @@ $(".circle").hover(function(){
  $(this).removeClass("flipping");
 });
 
-$("#listenHereBack").on("click", function() {
-  window.open("https://joewrightnc.github.io/ListenHearApp", "_blank")
+$("#bernarooBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/Bernaroo/index.html", "_blank")
+})
+
+$("#vcBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/VacantCompany/", "_blank")
 })
 
 $("#bernarooBack").on("click", function() {
