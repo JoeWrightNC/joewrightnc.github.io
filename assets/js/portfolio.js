@@ -195,6 +195,9 @@ $("#pokedexBack").on("click", function() {
   window.open("https://github.com/JoeWrightNC/pokedex", "_blank")
 })
 
+$("#barInvBack").on("click", function() {
+  window.open("https://github.com/JoeWrightNC/BarInventoryServer", "_blank")
+})
 
 //about page
 $("#emailCol").on("click", function() {
