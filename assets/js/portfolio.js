@@ -142,8 +142,8 @@ $(".circle").hover(function(){
  $(this).removeClass("flipping");
 });
 
-$("#bernarooBack").on("click", function() {
-  window.open("https://joewrightnc.github.io/Bernaroo/index.html", "_blank")
+$("#ListenHereBack").on("click", function() {
+  window.open("https://joewrightnc.github.io/ListenHearApp", "_blank")
 })
 
 $("#vcBack").on("click", function() {
