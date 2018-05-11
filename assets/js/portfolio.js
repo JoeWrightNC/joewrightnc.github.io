@@ -142,7 +142,7 @@ $(".circle").hover(function(){
  $(this).removeClass("flipping");
 });
 
-$("#ListenHereBack").on("click", function() {
+$("#listenHereBack").on("click", function() {
   window.open("https://joewrightnc.github.io/ListenHearApp", "_blank")
 })
 
