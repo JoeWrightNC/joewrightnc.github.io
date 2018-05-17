@@ -15,7 +15,6 @@ var partCounter = 2;
 var seconds = 0
 
 function surpriseDivTime() {
-  var i=0
   $("#surpriseDiv").hide()
   $("#surpriseDiv").fadeIn(3000)
   setTimeout(function() {
@@ -197,6 +196,10 @@ $("#pokedexBack").on("click", function() {
 
 $("#barInvBack").on("click", function() {
   window.open("https://github.com/JoeWrightNC/BarInventoryServer", "_blank")
+})
+
+$("#mtCommBack").on("click", function() {
+  window.open("https://polar-lake-11720.herokuapp.com/", "_blank")
 })
 
 //about page

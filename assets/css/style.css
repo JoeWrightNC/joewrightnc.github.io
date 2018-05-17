@@ -215,6 +215,10 @@ a:hover {
   top:0;
 }
 
+.row {
+  width:100vw;
+}
+
 #resumeDiv {
   position:absolute;
   left:0;
@@ -508,6 +512,7 @@ a:hover {
   position:relative;
   width:250px;
   height:250px;
+  margin:auto;
   -webkit-border-radius:50%;
     border-radius:50%;
    -moz-border-radius: 50%;
@@ -625,10 +630,13 @@ a:hover {
   padding-bottom:10px;
   padding-top:45px;
   font-weight: bold;
-  text-transform: uppercase
+  text-transform: uppercase;
+  padding-left:2vw;
 }
 
-
+#schoolLineTwo {
+  margin-top:15vh;
+}
 .text {
   font-family: 'Oswald', sans-serif;
   color: white;
