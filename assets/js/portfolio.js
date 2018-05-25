@@ -202,6 +202,10 @@ $("#mtCommBack").on("click", function() {
   window.open("https://polar-lake-11720.herokuapp.com/", "_blank")
 })
 
+$("#recipeSaverBack").on("click", function() {
+  window.open("https://protected-bastion-76388.herokuapp.com/", "_blank")
+})
+
 //about page
 $("#emailCol").on("click", function() {
   $("#emailForm").show()
