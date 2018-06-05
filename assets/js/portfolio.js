@@ -203,7 +203,7 @@ $("#mtCommBack").on("click", function() {
 })
 
 $("#recipeSaverBack").on("click", function() {
-  window.open("https://protected-bastion-76388.herokuapp.com/", "_blank")
+  window.open("https://salty-ridge-97695.herokuapp.com/", "_blank")
 })
 
 $("#yogiRachBack").on("click", function() {
