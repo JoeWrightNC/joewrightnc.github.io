@@ -145,12 +145,15 @@ $("#listenHereBack").on("click", function() {
   window.open("https://joewrightnc.github.io/ListenHearApp", "_blank")
 })
 
+$("#homeSteadBack").on("click", function() {
+  window.open("https://obscure-fortress-66993.herokuapp.com/account", "_blank")
+})
 $("#vcBack").on("click", function() {
   window.open("https://joewrightnc.github.io/VacantCompany/", "_blank")
 })
 
 $("#bernarooBack").on("click", function() {
-  window.open("https://joewrightnc.github.io/Bernaroo/index.html", "_blank")
+  window.open("https://joewrightnc.github.io/ModernBernaroo", "_blank")
 })
 
 $("#bootstrapBack").on("click", function() {
