@@ -205,6 +205,10 @@ $("#mtCommBack").on("click", function() {
   window.open("https://polar-lake-11720.herokuapp.com/", "_blank")
 })
 
+$("#localScrapeBack").on("click", function() {
+  window.open("hhttps://sleepy-savannah-48736.herokuapp.com/", "_blank")
+})
+
 $("#recipeSaverBack").on("click", function() {
   window.open("https://salty-ridge-97695.herokuapp.com/", "_blank")
 })
