@@ -206,7 +206,7 @@ $("#mtCommBack").on("click", function() {
 })
 
 $("#localScrapeBack").on("click", function() {
-  window.open("hhttps://sleepy-savannah-48736.herokuapp.com/", "_blank")
+  window.open("https://sleepy-savannah-48736.herokuapp.com/", "_blank")
 })
 
 $("#recipeSaverBack").on("click", function() {
