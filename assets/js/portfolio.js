@@ -153,7 +153,7 @@ $("#vcBack").on("click", function() {
 })
 
 $("#bernarooBack").on("click", function() {
-  window.open("https://joewrightnc.github.io/ModernBernaroo", "_blank")
+  window.open("http://www.bernaroomusicfest.com/index.html", "_blank")
 })
 
 $("#bootstrapBack").on("click", function() {
