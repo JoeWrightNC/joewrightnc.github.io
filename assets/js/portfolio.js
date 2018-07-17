@@ -221,6 +221,10 @@ $("#pollockBack").on("click", function() {
   window.open("https://pure-reef-77539.herokuapp.com/", "_blank")
 })
 
+$("#nytReactBack").on("click", function() {
+  window.open("https://sheltered-lowlands-45694.herokuapp.com/", "_blank")
+})
+
 //about page
 $("#emailCol").on("click", function() {
   $("#emailForm").show()
