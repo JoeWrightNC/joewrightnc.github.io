@@ -148,6 +148,11 @@ $("#listenHereBack").on("click", function() {
 $("#homeSteadBack").on("click", function() {
   window.open("https://obscure-fortress-66993.herokuapp.com/", "_blank")
 })
+
+$("#bartShopBack").on("click", function() {
+  window.open("https://stark-coast-40470.herokuapp.com/", "_blank")
+})
+
 $("#vcBack").on("click", function() {
   window.open("https://joewrightnc.github.io/VacantCompany/", "_blank")
 })
