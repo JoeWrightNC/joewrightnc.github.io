@@ -153,6 +153,10 @@ $("#bartShopBack").on("click", function() {
   window.open("https://stark-coast-40470.herokuapp.com/", "_blank")
 })
 
+$("#pfgBack").on("click", function() {
+  window.open("https://fierce-fortress-93462.herokuapp.com/", "_blank")
+})
+
 $("#vcBack").on("click", function() {
   window.open("https://joewrightnc.github.io/VacantCompany/", "_blank")
 })
