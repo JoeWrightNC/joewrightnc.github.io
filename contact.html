@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Joe Wright | Developer</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="The most powerful CV / RESUME template">
+	<meta name="keywords" content="Enter, your, keywords">
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-circle"></div>
+    </div>
+    <div class="container-fluid" id="aboutSection">
+        <div class="row">
+            <nav class="siteNav container-fluid stickyTop">
+                <div class="navLink"><a href="index.html">Home <span class="sr-only">(current)</span></a></div>
+                <div class="navLink"><a href="resume.html">Resume/CV</a></div>
+                <div class="navLink"><a href="portfolio.html">Portfolio</a></div>
+                <div class="navLink"><a class="active" href="contact.html">Contact</a></div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 huge-side right-side">
+                <div class="content-blocks contact">
+                    <section class="content">
+                        <h1 class="pageTitle2 centerUp">Get in Touch</h1>
+                        <div class="block-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form id="contactForm" data-toggle="validator" class="gform contact-form shake" action="https://script.google.com/macros/s/AKfycbxYTWrYUH9kyuZSNm3pu99sEMZR9Fs7hngc8VCkxsLMp8rqky0/exec" method="POST">
+                                        <div class="form-elements">
+                                        <div class="form-group">
+                                            <input id="name" type="text" class="form-control" name="name" autocomplete="off" required data-error="Please enter your name" placeholder="* Your Name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="email" type="email" class="form-control" name="email" autocomplete="off" required data-error="Please enter your email" placeholder="* Your Email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="message" class="form-control textarea" rows="10" name="message" required data-error="Please enter your message subject" placeholder="* Your Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button id="submit" type="submit" class="btn selected">Send Message</button>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        </div>
+                                        </div>
+                                        <div class="thankyou_message" style="display:none;">
+                                            <h2>
+                                                <b>Thank You</b> for getting in touch!
+                                                <br>
+                                                I'll get back to you very soon!
+                                            </h2>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+</body>
+</html>
