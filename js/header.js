@@ -67,7 +67,7 @@ var _React = React,
         iphone: {
             title: "Design",
             paragraph: "Creative UX/UI architect focused on intuitivity and usability.",
-            icons: ["adobe", "sketch", "svg",],
+            icons: ["adobe", "sketch", "svg", "apple",],
             images: {
                 main: files + "/iphone.png",
                 secondary: files + "/headphones.png",
