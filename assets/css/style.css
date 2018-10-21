@@ -1,0 +1,1283 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color:darkgray;
+}
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+  
+.the-icons {
+  font-size: 25px;
+}
+
+/*load screen*/
+#surpriseDiv {
+  width: 40%;
+  height: auto;
+  background-color:white;
+  font-size:50px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  line-height: 30px;
+  position: absolute;
+  top:13%;
+  left:27%;
+  z-index:101;
+}
+
+/*nav stuff*/
+#hamburgerBtn {
+  height: 8px;
+  width: 8%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  transform: rotate(90deg);
+  color:white;
+  font-size:small;
+  text-align:right;
+  z-index: 100;
+  outline: none;
+  animation: shake 1.5s ease-in-out infinite;
+  animation-delay: 6.5s;
+  animation-iteration-count: 2;
+}
+@keyframes shake {
+    0%   {
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);  
+  }
+    10%  {
+      -ms-transform: rotate(100deg);
+      -webkit-transform: rotate(100deg);
+      transform: rotate(100deg);
+      }
+    20%  {
+      -ms-transform: rotate(80deg);
+      -webkit-transform: rotate(80deg);
+      transform: rotate(80deg);
+  }
+  30%  {
+      -ms-transform: rotate(100deg);
+      -webkit-transform: rotate(100deg);
+      transform: rotate(100deg);
+      }
+    40%  {
+      -ms-transform: rotate(80deg);
+      -webkit-transform: rotate(80deg);
+      transform: rotate(80deg);
+  }
+  50%  {
+      -ms-transform: rotate(100deg);
+      -webkit-transform: rotate(100deg);
+      transform: rotate(100deg);
+      }
+    60%  {
+      -ms-transform: rotate(80deg);
+      -webkit-transform: rotate(80deg);
+      transform: rotate(80deg);
+  }
+
+    70% {
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);  
+  }
+}
+
+#bunTopper {
+  height: 8px;
+  width: 8%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 12%;
+  right: 13%;
+  transform: rotate(90deg);
+  color:white;
+  font-size:xx-small;
+  text-align:right;
+}
+
+#nameLines {
+  font-size:90px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  line-height: 55px;
+  transform: rotate(270deg);
+  position: absolute;
+  left:-5%;
+  bottom:25%;
+}
+
+#whatItDo {
+  font-size:90px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  line-height: 55px;
+  transform: rotate(90deg);
+  position: relative;
+  top:250px;
+  left:-200px;
+}
+
+.navTron {
+  margin-left:10%;
+  width: 80%;
+  background-color:white;
+  border-color:black;
+  position:absolute;
+  top: 5%;
+}
+
+.navBtns {
+  background-color:white;
+  border-color:white;
+  text-align:right;
+  text-transform: uppercase;
+  font-weight:900;
+  font-size:40px;
+  margin-top:5px;
+  margin-bottom:5px;
+  padding-right:10%;
+  letter-spacing:8px;
+}
+
+.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navSpan {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+
+.navSpan:before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+  left: -2.5px;
+  transition: width 1.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navSpan:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+  right: 2.5px;
+  background: #fff;
+  transition: width 1.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navSpan:hover:before {
+  background: white;
+  width: 60%;
+  transition: width 1.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navSpan:hover:after {
+  background: black;
+  width: 60%;
+  margin-bottom:20px;
+  height:20px;
+  transition: 1s;
+}
+
+/*resume*/
+#resumeBackground {
+  width: 100vw;
+  height: 100vh;
+  z-index:0;
+  position:fixed;
+  top:0;
+}
+
+.row {
+  width:100vw;
+}
+
+#resumeDiv {
+  position:absolute;
+  left:0;
+  right:0;
+  max-width:80%;
+}
+
+#resumeRowOne {
+  width: 102vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index:1;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  color:white;
+  text-align:center;
+}
+
+#resumeRowOne h1 {
+  margin-top:12vh;
+  font-size: 120px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  text-shadow:black 5px 5px;
+}
+
+#resumeRowOne h3 {
+  font-size: 100px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  text-shadow:black 5px 5px;
+}
+
+#resumeDownArrow {
+  font-size:70px;
+  position:absolute;
+  bottom:0;
+  right:22vw;
+  background-color: white;
+  color: black;
+  animation: lift 5.0s ease-in-out infinite;
+}
+@keyframes lift {
+  6%   {bottom:0px;}
+  8%  {bottom:5px;}
+  10%  {bottom:10px;}
+  12%  {bottom:15px;}
+  14% {bottom:20px;}
+  16%   {bottom:25px;}
+  18%  {bottom:30px;}
+  20%  {bottom:35px;}
+  22%  {bottom:25px;}
+  24% {bottom:15px;}
+  26% {bottom:0px;}
+}
+
+#resumeRowTwo {
+  width: 102vw;
+  height:125vh;
+  background-color:white;
+  color:black;
+  position:absolute;
+  top:100vh;
+  left:0;
+  right:0;
+  text-align:center;
+}
+
+#resumeRowTwo h2 {
+  font-size:40px;
+  font-weight:bold;
+  margin-top:5vh;
+}
+
+#resumeRowTwo h3 {
+  font-size: 25px;
+}
+
+#resumeRowTwo h4 {
+  font-size:30px;
+}
+
+#resumeRowTwo h5 {
+  font-size:20px;
+  text-align:left;
+}
+
+#resumeRowTwo li {
+  font-family: 'Oswald', sans-serif;
+  font-size:18px;
+  text-align:left;
+  z-index:10;
+}
+
+.ability-score {
+  position:absolute;
+  left:18vw;
+}
+#resumeRowTwo img {
+  position:absolute;
+  left:0;
+  bottom: 0;
+  animation: wiggle 5s ease-in-out infinite;
+  z-index:1;
+}
+@keyframes wiggle {
+  0%   {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+}
+  10%  {
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    }
+  20%  {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+30%  {
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    }
+  40%  {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+50%  {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+}
+
+#resumeRowThree {
+  width: 102vw;
+  height:140vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:225vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+.experienceContainer {
+  background-color:white;
+  width:90%;
+  float:left;
+  position:relative;
+  color:black;
+  font-weight:300;
+  height:130vh;
+}
+
+.experienceTitleLead{
+  text-align:left;
+  text-transform:uppercase;
+  font-size: 100px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  margin-bottom:60px;
+  letter-spacing: 8px;
+  z-index:1000;
+}
+
+#brainImg {
+  width:160px;
+  height:auto;
+  transform:rotate(16deg);
+  position:absolute;
+  right:65px;
+  top:12px;
+  z-index:0;
+}
+
+.companyWrapper {
+  width:30%;
+  float:left;
+  text-align:left;
+  padding-right:5%;
+  margin-bottom:60px;
+}
+
+.jobWrapper {
+  width:70%;
+  float:left;
+  text-align:left;
+  padding-right:5%;
+  margin-bottom:35px;
+}
+
+.experienceTitle {
+  color:black;
+  margin-bottom:15px;
+  font-weight: bold;
+}
+
+.experienceTitle a {
+  color:black;
+}
+
+#resumeRowFour {
+  width: 102vw;
+  height:160vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:350vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+#rowFourContainer {
+  background-color:white;
+  height:auto;
+}
+
+#typewriterImg {
+  width:60%;
+  height:auto;
+  margin-left:25px;
+}
+
+.experienceTitleLead2{
+  text-align:left;
+  text-transform:uppercase;
+  font-size: 75px;
+  letter-spacing: 15px;
+  font-weight:bold;
+  margin-bottom:60px;
+  letter-spacing: 8px;
+  z-index:1000;
+}
+
+#resumeRowFive {
+  width: 102vw;
+  height:auto;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:500vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+#rowFiveContainer {
+  background-color:white;
+  height:auto;
+}
+
+#resumeBottom {
+  margin-bottom:15px;
+}
+
+#resumeBottomImg {
+  width:60%;
+  margin-right:15%;
+  float:right;
+  cursor: pointer;
+}
+/*web projects*/
+
+#websitesTopText {
+  padding-top:15vh !important;
+}
+
+.webImgContainer {
+  margin:5vw;
+}
+
+.webRow {
+  height:300px !important;
+  margin-top: -5vh !important;
+}
+
+.circle
+{
+  position:relative;
+  width:250px;
+  height:250px;
+  margin:auto;
+  -webkit-border-radius:50%;
+    border-radius:50%;
+   -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  padding:10px;
+  	perspective :500px;
+	-webkit-perspective: 500px;
+    -moz-perspective: 500px;
+}
+
+.circleHeading {
+  font-family: 'Oswald', sans-serif;
+  font-size:30px;
+  font-weight: 900;
+  text-align:center;
+}
+
+.circleHeadingTwo {
+  font-family: 'Oswald', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  text-align:center;
+  font-style: italic;
+}
+
+.front img{
+  box-shadow: black 5px 3px;
+  border-radius:50%;
+   -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.front
+{
+  position:absolute;
+  z-index:1000;  
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+ -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.flipping .front
+{
+  z-index:9;
+  transform: rotateX(180deg);
+  -webkit-transform:rotateX(180deg);
+  -moz-transform:rotateX(180deg);
+}
+
+
+.back
+{
+  position:absolute;
+  width:250px;
+  height:250px;
+  background:#929292;
+  overflow:hidden;
+  cursor: pointer;
+  text-align:center;
+  z-index:8;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+   -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+  transform:rotateX(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+    -webkit-transform:rotateX(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform:rotateX(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+
+.flipping .back
+{
+  z-index:10;
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform:rotateX(0deg) rotateY(0deg);
+}
+
+/*games and apps*/
+#gamesTopText {
+  padding-top:15vh !important;
+}
+
+#schoolProjects {
+  width:100%;
+  margin-top:15vh;
+}
+
+#schoolGames {
+  width:100%;
+}
+
+.projText {
+  font-size: 50px;
+  padding-bottom:10px;
+  padding-top:45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left:2vw;
+}
+
+#schoolLineTwo {
+  margin-top:15vh;
+}
+.text {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding:3px;
+  width:96%;
+}
+
+.gamesImg {
+  width: 50px;
+  height:auto;
+}
+
+.gamesArrowImg {
+  width: 40px;
+  height:auto;
+}
+
+#gameImgRow {
+  margin-left:5%;
+}
+
+#vanGoghLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+#crystalLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+#rpgLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+#triviaLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+#gifzLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+#trainLink:hover .gamesOverlay {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+/* About page */
+.aboutRow {
+  width:80%;
+  height:85%;
+  position:fixed;
+  top:7.5%;
+  bottom:0;
+  left:0;
+  transform:rotate(-17deg);
+}
+
+.aboutBanners {
+  background:black;
+  color:white;
+  cursor: pointer;
+}
+
+.aboutBtwnBanners {
+  background:white;
+}
+
+.aboutTextBanners {
+  text-orientation: sideways;
+  word-wrap: break-word;
+  text-align:justify;
+  text-transform:uppercase;
+  position:absolute;
+  top:25%;
+  left:5%;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.aboutIcons {
+  width:70%;
+  height:auto;
+  position:absolute;
+  top:35%;
+  left:15%;
+}
+
+#emailForm {
+  position:fixed;
+  bottom:6%;
+  right:7%;
+  width:42%;
+  height:42%;
+  text-align:center;
+  background-color:black;
+  margin:auto;
+}
+
+#emailForm input {
+  width:90%;
+  margin:2%;
+}
+#emailForm textarea {
+  width:90%;
+  padding:3%;
+  margin:2%;
+
+}
+
+/*culture fit*/
+#catLoader {
+  position:relative;
+  top:0;
+  left:0;
+  height:100vh;
+}
+
+.cultureBlock {
+  width: 60%;
+  height:auto;
+  position:absolute;
+  top:10%;
+  left:10%;
+  color:black;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.cultureHeading {
+  font-size:25px;
+  font-weight: bold;
+  letter-spacing: 12px;
+  margin-bottom:15px;
+}
+
+.nextArrow {
+  width:60px;
+  height:auto;
+  position:absolute;
+  top:90%;
+  left:90%;
+}
+
+.cultureBodyIcons {
+  width:120px;
+  height:auto;
+  position:absolute;
+  top:28%;
+  left:118%;
+}
+
+#hiddenPets {
+  width:80%;
+  z-index:100;
+}
+
+.hiddenPetsImg {
+  width:100%;
+  height:auto;
+}
+
+.hiddenPetsClass {
+  position:absolute;
+  top:0;
+  width:100%;
+  height:auto;
+}
+
+#recordPlayer {
+  position:absolute;
+  top:0;
+  width:auto;
+  height:100vh;
+  background-color:black
+}
+
+.recordBtn {
+  background-color:black;
+  color:white;
+  box-shadow: 4px 4px darkgrey;
+  text-align:right;
+}
+
+.recordBtn:hover {
+  box-shadow:1px 1px grey;
+}
+
+#recordBtnOne {
+  position:absolute;
+  top:35%;
+  right:15%;
+}
+
+#recordBtnTwo {
+  position:absolute;
+  top:50%;
+  right:15%;
+}
+
+#recordBtnThree {
+  position:absolute;
+  top:65%;
+  right:15%;
+}
+
+#recordBtnFour {
+  position:absolute;
+  top:80%;
+  right:15%;
+}
+
+#recordPauseBtn {
+  position:absolute;
+  top:90%;
+  right:50%;
+  background-color:black;
+  color:white;
+}
+
+#bookShelf {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  background: none;
+}
+
+.book {
+  width: 9%;
+  height: 45%;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  box-shadow: 3px 3px 5px #222;
+}
+
+#rilke {
+  left: 13.5%;
+  top: 34.25%;
+  background-color: lightblue;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.bookTitle {
+  display:block;
+  transform:rotate(90deg);
+  padding-left:12px;
+  font-weight: bold;
+}
+
+#ferlinghetti {
+  left: 26%;
+  background-color:goldenrod;
+}
+
+#olson {
+  left: 38%;
+  background-color: seagreen;
+}
+
+#ginsberg {
+  left: 51%;
+  background-color: gray;
+}
+
+#yeats {
+  left: 64%;
+  background-color: #28BAE9;
+}
+
+#mayakovsky {
+  left: 77%;
+  background-color:orangered;
+}
+
+.white {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+  background-color: #fff;
+}
+
+.grey {
+  width: 45%;
+  height: 15%;
+  position: absolute;
+  left: 27.5%;
+  top: 75%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.bar {
+  width: 75%;
+  height: 6%;
+  background-color: black;
+  position: absolute;
+  top: 80%;
+  left: 12.5%;
+  z-index: 2;
+  box-shadow: 3px 3px 5px #222;
+}
+
+.poems{
+  font-family: 'Oswald', sans-serif;
+  line-height: 5px;
+  position:absolute;
+  top:20%;
+  left:20%
+}
+
+#ginsbergDiv {
+  font-family: 'Oswald', sans-serif;
+  line-height: 15px;
+  position:absolute;
+  top:20%;
+  left:5%;
+}
+
+#leaveGinsbergBtn {
+  position: absolute;
+  top:80%;
+  right:20% !important;
+}
+#leaveBooksBtn{
+  position:absolute;
+  top:120%;
+  right:-20%;
+}
+
+.leavePoemBtn{
+  height:30px;
+  position:absolute;
+  top:80%;
+  right:-120%;
+}
+
+#olsonBtn {
+  height:30px;
+  position:absolute !important;
+  top:80% !important;
+  right:-70% !important;
+}
+
+#testingTester {
+  color:black;
+}
+
+/* tablet media queries */
+@media all and (min-width: 768px) and (max-width: 1260px) {
+  /*nav stuff*/
+#hamburgerBtn {
+  height: 12vw;
+  width: 8vw;
+  font-size:small;
+  text-align:center;
+  border-radius:50%;
+}
+
+#bunTopper {
+  display: none;
+}
+
+.navTron {
+  margin-left:2vw;
+  opacity:.85;
+  z-index:10000;
+}
+
+.navBtns {
+  text-align:left;
+}
+}
+
+@media all and (max-width: 767px) {
+  /*nav stuff*/
+  #hamburgerBtn {
+    height: 12vw;
+    width: 8vw;
+    font-size:small;
+    text-align:center;
+    border-radius:50%;
+  }
+
+  #bunTopper {
+    display: none;
+  }
+
+  #surpriseDiv {
+    width: 90vw;
+    height: auto;
+    font-size:20px;
+    letter-spacing: 2px;
+    line-height: 18px;
+    position: absolute;
+    top:35vh;
+    left:0;
+  }
+
+  #nameLines {
+    font-size:30px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    line-height: 26px;
+    transform: rotate(270deg);
+    position: absolute;
+    left:2vw;
+    bottom:10vh;
+  }
+
+  #nameLines p {
+    margin-bottom:0rem !important;
+  }
+  
+  #whatItDo {
+    font-size:30px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    line-height: 30px;
+    transform: rotate(90deg);
+    position: relative;
+    top:20vw;
+    left:-20vw;
+  }
+
+  .navTron {
+    margin-left:2vw;
+    opacity:.85;
+    z-index:10000;
+  }
+  
+  .navBtns {
+    text-align:left;
+    font-size:20px;
+    letter-spacing:2px;
+  }
+  
+  /*resume*/
+#resumeBackground {
+  width: auto;
+  height: 100vh;
+  z-index:0;
+  position:fixed;
+  top:0;
+}
+
+#resumeRowOne h1 {
+  margin-top:45vh;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow:black 3px 3px;
+}
+
+#resumeRowOne h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight:bold;
+  text-shadow:black 2px 2px;
+}
+
+#resumeRowTwo {
+  width: 102vw;
+  height:130vh;
+  background-color:white;
+  color:black;
+  position:absolute;
+  top:100vh;
+  left:0;
+  right:0;
+  text-align:center;
+}
+
+#resumeRowTwo h2 {
+  font-size:30px;
+}
+
+.ability-score {
+  position:absolute;
+  left:50vw;
+}
+
+#handHeldCol {
+  display:none;
+}
+
+#resumeRowTwo img {
+  display:none;
+}
+
+#resumeRowThree {
+  height:130vh;
+  position:absolute;
+  top:230vh;
+  left:0;
+  right:0;
+}
+
+.experienceContainer {
+  height:130vh;
+}
+
+.experienceTitleLead{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight:bold;
+  margin-top:15px;
+  margin-bottom:25px;
+}
+
+#brainImg {
+  width:60px;
+  height:auto;
+  position:absolute;
+  right:20px;
+  top:10px;
+  z-index:0;
+}
+
+.companyWrapper {
+  font-size:12px;
+}
+
+.jobWrapper {
+  font-size:12px;
+}
+
+#resumeRowFour {
+  width: 102vw;
+  height:200vh;
+  background-color:black;
+  color:black;
+  position:absolute;
+  top:360vh;
+  left:0;
+  right:0;
+  text-align:center;
+  border:solid black 10px;
+}
+
+#rowFourContainer {
+  background-color:white;
+  height:auto;
+}
+
+#typewriterImg {
+  width:60%;
+  height:auto;
+  margin-left:25px;
+}
+
+.experienceTitleLead2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom:30px;
+}
+
+#resumeRowFive {
+  position:absolute;
+  top:560vh;
+  left:0;
+  right:0;
+}
+
+/*web projects*/
+#nonSchoolProjects {
+  margin-top:10vh;
+}
+.webRow {
+  height:auto !important;
+}
+
+#schoolGames {
+  margin-top:10vh;
+}
+/*about contact*/
+.aboutTextBanners {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  word-wrap: break-word;
+  text-align:justify;
+  text-transform:uppercase;
+  position:absolute;
+  left:20%;
+  top:40%;
+  font-size:10px;
+  font-weight:normal;
+}
+
+#emailForm {
+  position:fixed;
+  bottom:6%;
+  right:7%;
+  width:80%;
+  height:40%;
+  text-align:center;
+  background-color:black;
+  margin:auto;
+}
+
+.mobileButton {
+  background-color:white;
+}
+
+#cultureFitDiv p {
+  font-size:12px !important;
+}
+
+.cultureHeading {
+  font-size: 16px !important;
+}
+
+#bookShelf {
+  width: 300px;
+  height: 200px;
+}
+
+.bookTitle {
+    font-size:10px;
+    font-weight: bold;
+}
+
+}
