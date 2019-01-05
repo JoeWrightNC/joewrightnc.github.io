@@ -215,5 +215,8 @@
 
 	// execute above function
 	initPhotoSwipeFromDOM('.project-gallery');
+ 
+	// on click scroll down in react app
+
 
 })(jQuery);
