@@ -8,6 +8,24 @@
 	    $("body").css("overflow-y", "auto");
 	});
 
+	//scroll to function
+	$(document).ready(function(){
+    $('.scroll-to').click(function(e){
+        e.preventDefault();
+        var destination_element_id = $(this).attr('href');
+        
+        // accommodate inclusion of # in front
+        destination_element_id = destination_element_id.replace('#','');
+
+        // Top offset so content scrolled to is not under top header bar
+        var top_offset = 10;
+
+        // scroll to the element with the id in the href
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#'+destination_element_id).offset().top - top_offset
+        }, 1000);
+    })
+});
 	//Photoswipe Init
 
 	var initPhotoSwipeFromDOM = function(gallerySelector) {

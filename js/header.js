@@ -64,6 +64,7 @@ var _React = React,
     content = {
         title: "Joe Wright",
         subtitle: "Creative Full Stack Developer",
+        image: "images/down.png",
         iphone: {
             title: "Design",
             paragraph: "Creative UX/UI architect focused on intuitivity and usability.",
@@ -551,6 +552,8 @@ var _React = React,
                     });
                 return React.createElement("div", {
                     ref: "scene",
+                    className: "scroll-to",
+                    "href": "#aboutSection",
                     style: a
                 }, React.createElement("div", {
                     className: "layer",
@@ -911,6 +914,10 @@ var _React = React,
                     d = _extends({}, styles.headline, {
                         fontSize: "2vh"
                     }),
+                    j = _extends({}, styles.headline, {
+                        fontSize: "1vh",
+                        maxHeight: "60px",
+                    }),
                     f = _extends({}, styles.headline, {
                         fontSize: "1.1vh",
                         margin: "2vh",
@@ -924,8 +931,15 @@ var _React = React,
                 }, content.title), React.createElement("h2", {
                         style: d
                     },
-                    content.subtitle))
-            }
+                    content.subtitle), 
+                    
+                    React.createElement("img", {
+                        src: content.image,
+                        height: "50%",
+                        style: j
+                    })
+                    )
+            } 
         }]);
         return a
     }(Component),
