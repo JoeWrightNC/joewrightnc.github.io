@@ -18,7 +18,7 @@
         destination_element_id = destination_element_id.replace('#','');
 
         // Top offset so content scrolled to is not under top header bar
-        var top_offset = 10;
+        var top_offset = 0;
 
         // scroll to the element with the id in the href
         $([document.documentElement, document.body]).animate({
