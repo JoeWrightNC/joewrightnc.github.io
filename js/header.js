@@ -63,7 +63,7 @@ var _React = React,
     files = "./images/intro",
     content = {
         title: "Joe Wright",
-        subtitle: "Creative Full Stack Developer",
+        subtitle: "Full Stack Engineer",
         image: "images/down.png",
         iphone: {
             title: "Design",
@@ -88,7 +88,7 @@ var _React = React,
         },
         macbook: {
             title: "Development",
-            paragraph: "Full stack web solutions built custom to your needs",
+            paragraph: "Complete web solutions built to your needs",
             icons: "node express php nginx mongo mysql javascript npm passport socket babel webpack react redux vue git wordpress wix".split(" "),
             images: {
                 main: files + "/macbook.png",
