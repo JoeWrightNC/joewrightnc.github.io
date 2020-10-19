@@ -80,7 +80,7 @@ var _React = React,
         ipad: {
             title: "Web",
             paragraph: "Responsive web applications for modern browsers.",
-            icons: "html css sass less gulp google hubspot intercom".split(" "),
+            icons: "html css sass less wordpress wix gulp google hubspot intercom".split(" "),
             images: {
                 main: files + "/ipad.png",
                 screens: [files + "/ipad_base.svg", files + "/ipad_outlines.svg", files + "/ipad_content.svg", files + "/ipad_interative.svg"]
@@ -89,7 +89,7 @@ var _React = React,
         macbook: {
             title: "Software",
             paragraph: "Complete engineered solutions built to your unique needs",
-            icons: "node express php nginx mongo mysql javascript npm passport socket babel webpack react redux vue git wordpress wix".split(" "),
+            icons: "node express php nginx mongo mysql javascript npm passport socket babel webpack react redux vue git".split(" "),
             images: {
                 main: files + "/macbook.png",
                 screens: [files + "/macbook_base.svg", files + "/macbook_outlines.svg", files + "/macbook_content.svg", files + "/macbook_interative.svg"]
